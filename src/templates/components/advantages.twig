@@ -1,0 +1,49 @@
+<div class="advantages block">
+    <div class="row">
+        <div class="col xs-12 md-6">
+            {% include "modules/blockHeading.twig" with { "__scope": __scope.title } %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col xs-12 lg-8">
+            <div class="row rowClear_offset">
+                {% for item in __scope.items %}
+                    <div class="col xs-12 sm-6 md-4">
+                        <div class="advantage">
+                            <div class="advantage__imgWrap">
+                                <img class="advantage__img" src="{{ item.image }}">
+                            </div>
+                            <div class="advantage__caption">
+                                {{ item.caption }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col xs-12 lg-4 xs-center">
+            <div class="advantages__right">
+                <div>
+                    <div class="advantages__title">
+                        {{ __scope.right_title }}
+                    </div>
+                    <div class="advantages__text">
+                        {{ __scope.right_text }}
+                    </div>
+                </div>    
+                <div>
+                    <div class="advantages__btn">
+                        <a class="btn btn_medium" {{ __scope.btn.action }}>
+                            {{ __scope.btn.text }}
+                        </a>
+                    </div>
+                    <div class="advantages__links">
+                        <a class="link link_medium" {{ __scope.link.action }}>
+                            {{ __scope.link.text }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

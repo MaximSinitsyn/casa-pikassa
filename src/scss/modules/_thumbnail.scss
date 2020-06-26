@@ -1,0 +1,16 @@
+.thumbnail {
+    width: 100%;
+    height: size(15);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 150ms 0ms linear;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &_small {
+        height: size(10);
+    }
+}

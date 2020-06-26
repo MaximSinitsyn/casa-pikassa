@@ -1,0 +1,126 @@
+{% 
+    set 
+    blockType,
+    tariffType,
+    linksVar =
+    '',
+    '',
+    ''
+%}
+
+{% if __scope.block_type is defined %}
+    {% 
+        set 
+        blockType,
+        tariffType,
+        linksVar =
+        'block_' ~ __scope.block_type,
+        'tariff_white',
+        'link_white'
+    %}
+{% endif %}
+
+<div class="block tariffs {{ blockType }} {{ __scope.blockMod }}" style="background-image: url({{ __scope.background }})">
+    {% if __scope.heading is defined %}
+
+    {% else %}
+    <div class="row">
+        <div class="col xs-12 md-7">
+            {% if __scope.block_type is defined %}
+                {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__mod": "blockHeading_white" } %}
+            {% else %}
+                {% include "modules/blockHeading.twig" with { "__scope": __scope.title } %}
+            {% endif %}
+        </div>
+        <div class="col xs-12 md-5 md-end xs-top">
+            <a class="link link_bold {{ linksVar }}" {{ __scope.link.action }}>
+                {{ __scope.link.text }}
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    <div class="row">
+        {% for tariff in __scope.tariffs %}
+            <div class="col xs-12 lg-{{ 12 / __scope.tariffs|length }} tariffs__col">
+                <div class="tariff {{ tariffType }}">
+                    <div class="tariff__content">
+                        
+                        {% if tariff.sub_title is defined %}
+
+                            <div class="tariff__heading">
+                                <div class="tariff__icon">
+                                    <img src="/icon/coupon.svg">
+                                </div>
+                                {% if tariff.icon is defined %}
+                                    <div class="tariff__icon">
+                                        <img src="{{ tariff.icon }}">
+                                    </div>
+                                {% endif %}
+                                <div class="tariff__headingInner">
+                                    <div class="tariff__headingMain">
+                                        {{ tariff.title }}
+                                    </div>
+                                    <div class="tariff__headingSub">
+                                        {{ tariff.sub_title }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="tariff__heading">
+                                {% if tariff.icon is defined %}
+                                    <div class="tariff__icon">
+                                        <img src="{{ tariff.icon }}">
+                                    </div>
+                                {% endif %}
+                                <div class="tariff__headingInner">
+                                    {{ tariff.title }}
+                                </div>
+                            </div>
+                        {% endif %}
+
+
+
+                        {% if tariff.prev_list is defined %}
+                            <ul class="tariff__list">
+                                {% for item in tariff.prev_list %}
+                                    <li class="tariff__listItem">
+                                        {{ item.text }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        <ul class="tariff__list">
+                            {% for item in tariff.list %}
+                                <li class="tariff__listItem">
+                                    {{ item.text }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="tariff__subContent">
+                        <ul class="tariff__prices">
+                            {% for price in tariff.price %}
+                                <li class="tariff__price">
+                                    {% if price.label is defined %}
+                                        <span>{{ price.label }}</span>
+                                        <span class="tariff__priceValue">{{ price.value }}</span>
+                                    {% else %}
+                                        {% if price.value_old is defined %}
+                                            <span class="tariff__priceValueOld">{{ price.value_old }}</span>
+                                        {% endif %}
+                                        <span class="tariff__priceValue">{{ price.value }}</span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <div>
+                            <button class="btn btn_medium tariff__btn" {{ tariff.btn.action }}>
+                                {{ tariff.btn.text }}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>        

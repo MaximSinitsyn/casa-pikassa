@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 212px;
+
+    &_dark {
+        display: none
+    }
+
+    &__logoImg {
+        // width: 100%;
+        height: 40px;
+        padding: 6px 0;
+
+        &_v {
+            // width: 60px;
+            padding: 0;
+        }
+    }
+}
+
+.scroll .logo {
+    display: none;
+
+    &_dark {
+        display: flex;
+    }
+}

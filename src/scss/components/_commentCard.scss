@@ -1,0 +1,41 @@
+.commentCard {
+    padding: size(4);
+    background: $dark;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+
+    &__img {
+        width: size(15);
+        height: size(15);
+        display: flex;
+        flex: 0 0 auto;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        border-radius: size(15);
+        margin-bottom: size(2);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        margin-top: size(3);
+    }
+
+    &__title {
+        @include font(xhg);
+
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-top: size(2);
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "slides": [
+        {
+            "data": {
+                "items": [
+                    {
+                        "img": "/images/clients/cdek.jpg"
+                    },
+                    {
+                        "img": "/images/clients/nestle.jpg"
+                    },
+                    {
+                        "img": "/images/clients/leroy.jpg"
+                    },
+                    {
+                        "img": "/images/clients/bm.jpg"
+                    },
+                    {
+                        "img": "/images/clients/like.jpg"
+                    },
+                    {
+                        "img": "/images/clients/metro.jpg"
+                    },
+                    {
+                        "img": "/images/clients/raif.jpg"
+                    },
+                    {
+                        "img": "/images/clients/rostelekom.jpg"
+                    }
+                ] 
+            }
+        },
+        {
+            "data": {
+                "items": [
+                    {
+                        "img": "/images/clients/beline.jpg"
+                    },
+                    {
+                        "img": "/images/clients/american.jpg"
+                    },
+                    {
+                        "img": "/images/clients/alfa.jpg"
+                    },
+                    {
+                        "img": "/images/clients/easy.jpg"
+                    },
+                    {
+                        "img": "/images/clients/punktum.jpg"
+                    },
+                    {
+                        "img": "/images/clients/acronis.jpg"
+                    },
+                    {
+                        "img": "/images/clients/wiawi.jpg"
+                    }
+                ]
+            }
+        }
+    ]
+}

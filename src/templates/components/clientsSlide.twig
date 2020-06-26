@@ -1,0 +1,48 @@
+{% set _col = 'xs-12 md-6 lg-3' %}
+{% if __scope.columns is defined %}
+    {% set _col = 'xs-12 ' ~ __scope.columns.sm ~ ' ' ~ __scope.columns.md ~ ' ' ~  __scope.columns.lg %}
+{% endif %}
+
+
+{% 
+    set 
+    val_1,
+    val_2,
+    val_3 =
+    'uk-slider-container',
+    'uk-slider-items',
+    ''
+%}
+{% if __var == 'notSlider' %}
+    {% 
+        set 
+        val_1,
+        val_2,
+        val_3 =
+        '',
+        '',
+        'row'
+    %}
+{% endif %}
+
+
+{% set slides = __scope.slides %}
+{% if __scope.slides.slides is defined %}
+    {% set slides = __scope.slides.slides %}
+{% endif %}
+
+<div class="row {{ val_1 }}">
+    <ul class="col xs-12 {{ val_2 }} {{ val_3 }}">
+        {% for slide in slides %}
+            <li class="col {{ _col }}">
+                <div class="row row_clearOffset">
+                    {% for item in slide.items %}
+                        <div class="col xs-12 sm-6 md-4 lg-3 xs-top xs-center">
+                            <img src="{{ item.img }}">
+                        </div>
+                    {% endfor %}
+                </div>  
+            </li>
+        {% endfor %}
+    </ul>
+</div>

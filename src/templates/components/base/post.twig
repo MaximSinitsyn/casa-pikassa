@@ -1,0 +1,175 @@
+<div class="row post">
+    <div class="col xs-12 lg-9 xs-top">
+        <div class="row row_clearOffset post__article">
+            {% if __scope.templateFull is defined %}
+                {% if __scope.title is defined %}
+                    <div class="col xs-12">
+                        {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__heading": "h1" } %}
+                    </div>
+                {% endif %}
+                <div class="col xs-12 post__container">
+                    {% include __scope.templateFull  with { "__scope": __scope.scope,  "__var": __scope.__var} %}
+                </div>
+                <div class="col xs-12 post__text">
+                    <span>
+                        {{ __scope.text | raw }}
+                    </span>
+                </div>
+            {% else %}
+                {% if __scope.post_type is defined %}
+                    {% if __scope.post_type == "" %}
+                        <div class="col xs-12 xs-top">
+                            <img src="{{ __scope.post_img }}">
+                        </div>
+                    {% elseif __scope.post_type == "tabs" %}
+                        {% include __scope.template with { "__scope": __scope } %}
+                    {% endif %}
+                    <div class="col xs-12">
+                        <div class="row row_clearOffset"> 
+                            <div class="col xs-12 md-8">
+                                {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__heading": "h1", "__mod": "blockHeading_small blockHeading_noOffset" } %}
+                            </div>
+                            <div class="col xs-12 md-4 xs-center md-end">
+                                <ul style="width: 100%;">
+                                    {% for list_item in __scope.list %}
+                                        <li class="listItem {{ list_item.type }}">
+                                            {% if list_item.icon is defined %}
+                                                <span class="listItem__icon">
+                                                    <img src="{{ list_item.icon }}">
+                                                </span>
+                                            {% endif %}
+                                            <span class="listItem__text listItem__text_right">
+                                                {{ list_item.text }}
+                                            </span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="col xs-12 post__text">
+                                <span>
+                                    {{ __scope.text | raw }}
+                                </span>
+                            </div>
+                            {% if __scope.template is defined %}
+                                {% if __scope.post_type != "tabs" %}
+                                    <div class="col xs-12 post__container">
+                                        {% include __scope.template  with { "__scope": __scope } %}
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="col xs-12">
+                        {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__heading": "h1" } %}
+                    </div>
+                    {% if __scope.template is defined %}
+                    <div class="col xs-12 post__container">
+                        {% include __scope.template  with { "__scope": __scope, "__var": "notSlider" } %}
+                    </div>
+                    {% endif %}
+                    <div class="col xs-12 post__text">
+                        <span>
+                            {{ __scope.text | raw }}
+                        </span>
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+    <div class="col xs-12 lg-3 xs-top post__sidebar" >
+        {% if __scope.sidebar.type == 'promo' %}
+            <ul class="promoList row">
+                {% for item in __scope.sidebar.items %}
+                    <li class="promoList__item col xs-12 sm-6 lg-12">
+                        <div class="promoList__itemContent">
+                            <div class="promoList__itemTitle">
+                                {{ item.title }}
+                            </div>
+                            <div class="promoList__itemImg" style="background-image: url({{ item.img }})"></div>
+                            <div class="promoList__itemDescription">
+                                <span>{{ item.date.day }}</span>
+                                <span>{{ item.date.time }}</span>
+                            </div>
+                            <a class="promoList__btn btn btn_medium" {{ item.btn.action }}>
+                                {{ item.btn.text }}
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% elseif __scope.sidebar.type == 'menu' %}
+            <div class="sidebarMenu">
+                {% if __scope.sidebar_title is defined %}
+                    <div class="sidebarMenu__title lg-off">
+                        {{ __scope.sidebar_title }}
+                    </div>
+                {% endif %}
+
+                <ul class="sidebarMenu__list">
+                    {% for item in __scope.sidebar.items %}
+
+                        {% if item.link in __system.uri %}
+
+                            <li class="sidebarMenu__item sidebarMenu__item_active {{ typeItem }}">
+                                <span class="sidebarMenu__link">
+                                    {{ item.title }}
+                                </span>
+                                {% if item.extended is defined %}
+                                    <div class="sidebarMenu__extended">
+                                        <div class="sidebarMenu__iconSet">
+                                            <span class="iconSet">
+                                                {% for icon in item.extended.icons %}
+                                                    <span class="iconSet__item" uk-tooltip="{{ icon.text }}">
+                                                        <img class="iconSet__icon" src="{{ icon.src }}">
+                                                    </span>
+                                                {% endfor %}
+                                            </span>
+                                        </div>
+                                        <ul class="sidebarMenu__extendedList">
+                                            {% for extend_item in item.extended.items %}
+                                                <li class="sidebarMenu__extendedItem">
+                                                    {% if extend_item.label is defined %}
+                                                        <span class="sidebarMenu__extendedLabel">
+                                                            {{ extend_item.label }}
+                                                        </span>
+                                                    {% endif %}
+                                                    {% if extend_item.caption is defined %}
+                                                        <span class="sidebarMenu__extendedCaption">
+                                                            {{ extend_item.caption }}
+                                                        <span>
+                                                    {% endif %}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                        <div class="sidebarMenu__btn">
+                                            <a class="btn btn_medium" {{ item.extended.btn.action }}>
+                                                {{ item.extended.btn.text }}
+                                            </a>
+                                        </div>
+                                        {% if item.extended.links is defined %}
+                                            <div class="sidebarMenu__links">
+                                                {% for link in item.extended.links %}
+                                                    <a class="link link_medium" {{ link.action }}>
+                                                        {{ link.text }}
+                                                    </a>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            </li>
+                        {% else %}
+                            <li class="sidebarMenu__item {{ typeItem }}">
+                                <a class="sidebarMenu__link" href="{{ item.link }}">
+                                    {{ item.title }}
+                                </a>
+                            </li>
+                        {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>    
+        {% endif %}
+    </div>
+</div>

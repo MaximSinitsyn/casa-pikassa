@@ -1,0 +1,20 @@
+{
+    "background": {
+        "data": "/images/anti-lecture.jpg"
+    },
+    "title": {
+        "data": {
+            "main": "Анти лекторий",
+            "sub": "Беседы об искусстве в уютной атмосфере с интересными лекторами"
+        }
+    },
+    "headingMod": {
+        "data": "blockHeading_white"
+    },
+    "btn": {
+        "data": {
+            "text": "Узнать подробнее",
+            "action": "href=/afisha/anti-lecture"
+        }
+    }
+}

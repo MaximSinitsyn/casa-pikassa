@@ -1,0 +1,37 @@
+<div class="block block_overlay">
+    <div class="row">
+        <div class="col xs-12 md-7">
+            {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__mod": "blockHeading_white" } %}
+        </div>
+    </div>
+    <div class="row">
+        {% set sm = "" %}
+        {% set md = "" %}
+        {% set lg = "" %}
+
+        {% if __scope.cols.sm %}
+            {% set sm = "sm-" ~ __scope.cols.sm %}
+        {% endif %}
+
+        {% if __scope.cols.md %}
+            {% set md = "md-" ~ __scope.cols.md %}
+        {% endif %}
+
+        {% if __scope.cols.lg %}
+            {% set lg = "lg-" ~ __scope.cols.lg %}
+        {% endif %}
+
+        {% for item in __scope.items %}
+            <div class="col xs-12 {{ sm }} {{ md }} {{ lg }} xs-center">
+                <div class="counter" uk-scrollspy="offset-top: -300">
+                    <div class="counter__circle" data-progress="{{ item.count }}">
+                        <strong class="counter__circleText">0</strong>
+                    </div>
+                    <div class="counter__description">
+                        {{ item.text }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

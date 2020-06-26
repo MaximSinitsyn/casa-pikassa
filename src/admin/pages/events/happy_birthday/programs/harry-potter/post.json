@@ -1,0 +1,189 @@
+{
+    "title": {
+        "data": {
+            "main": "Гарри Поттер: пропавшее заклинание"
+        }
+    },
+    "post_img": {
+        "data": "/images/packs/harry.png"
+    },
+    "post_type": {
+        "data": ""
+    },
+    "list": [
+        {
+            "data": {
+                "text": "От 10 лет",
+                "icon": "/icon/cake_dark.svg",
+                "type": "listItem_reverse"
+            }
+        },
+        {
+            "data": {
+                "text": "До 10 человек",
+                "icon": "/icon/users_dark.svg",
+                "type": "listItem_reverse"
+            }
+        }
+    ],
+    "text": {
+        "data": "<p>Вперед за волшебными и детективными приключениями в библиотеку Хогвартс! Порой даже самым сильным и умным волшебникам требуется помощь — особенно если из их библиотеки пропадает могущественное заклинание, способное впустить в наш мир тёмные силы. Колдунья, похитившая заклинание, очень хочет его вернуть, но совершенно не помнит, где его спрятала. Надежда только на юных  и бесстрашных волшебников, способных прийти на помощь всей дружной командой! Веселые и волшебные конкурсы, ребусы и загадки в мире волшебства.</p>"
+    },
+    "sidebar_title": {
+        "data": "Другие программы"
+    },
+    "heading": {
+        "data": ""
+    },
+    "blockMod": {
+        "data": "block_smallOffset"
+    },
+    "template": {
+        "data": "components/tariffs.twig"
+    },
+    "tariffs": [
+        {
+            "data": {
+                "title": "Minimal",
+                "sub_title": "3 часа",
+                "list": [
+                    {
+                        "text": "Квест приключение: Пропавшее заклинание (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Тематические настольные игры: Зельеварение, Крагморта, Ведьмы, Да, Темный властелин!"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "4 000 руб.",
+                        "value_old": "8 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Standart",
+                "sub_title": "4 часа",
+                "list": [
+                    {
+                        "text": "Квест приключение: Пропавшее заклинание (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Тематические настольные игры: Зельеварение, Крагморта, Ведьмы, Да, Темный властелин!"
+                    },
+                    {
+                        "text": "Just dance c ведущим"
+                    },
+                    {
+                        "text": "Скидка на аренду зала — 5%"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "7 500 руб.",
+                        "value_old": "12 000 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Premium",
+                "sub_title": "5 часов",
+                "list": [
+                    {
+                        "text": "Квест приключение: Пропавшее заклинание (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Тематические настольные игры: Зельеварение, Крагморта, Ведьмы, Да, Темный властелин!"
+                    },
+                    {
+                        "text": "Just dance c ведущим"
+                    },
+                    {
+                        "text": "Мастер-класс рисование на чашках"
+                    },
+                    {
+                        "text": "Скидка 10% на аренду залов"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "13 500 руб.",
+                        "value_old": "19 000 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        }
+    ],
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Шерлок: детективное приключение",
+                    "link": "/events/happy-birthday/programs/sherlok"
+                },
+                {
+                    "title": "Гарри Поттер: пропавшее заклинание",
+                    "link": "/events/happy-birthday/programs/harry-potter"
+                },
+                {
+                    "title": "Маленький принц: доброе приключение",
+                    "link": "/events/happy-birthday/programs/small-prince"
+                },
+                {
+                    "title": "Kids Party: для маленьких непосед",
+                    "link": "/events/happy-birthday/programs/kids-party"
+                },
+                {
+                    "title": "Gangster Party: вечеринка в стиле 30-х",
+                    "link": "/events/happy-birthday/programs/gangster-party"
+                },
+                {
+                    "title": "Супергерои: вечеринка с любимыми персонажами",
+                    "link": "/events/happy-birthday/programs/super-heroes"
+                },
+                {
+                    "title": "Пижамная вечеринка",
+                    "link": "/events/happy-birthday/programs/pajama-party"
+                },
+                {
+                    "title": "Загадочная Япония: чайная медитация",
+                    "link": "/events/happy-birthday/programs/mysterious-japan"
+                },
+                {
+                    "title": "Шпионская вечеринка: детективное приключение в конце 40-х",
+                    "link": "/events/happy-birthday/programs/spy-party"
+                },
+                {
+                    "title": "Алиса в стране чудес: безумное чаепитие",
+                    "link": "/events/happy-birthday/programs/alice-in-wonderland"
+                }
+            ]
+        }
+    }
+}

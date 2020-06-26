@@ -1,0 +1,23 @@
+{
+    "title": {
+        "data": {
+            "main": "Аренда залов",
+            "sub": "Уютные залы с домашней обстановкой для работы, учебы и отдыха."
+        }
+    },
+    "link": {
+        "data": {
+            "text": "Посмотреть все залы",
+            "url": "/rent"
+        }
+    },
+    "id": {
+        "data": "homeRooms"
+    },
+    "block_type": {
+        "data": "overlay"
+    },
+    "slides": {
+        "json": "/blocks/rooms.json"
+    }
+}

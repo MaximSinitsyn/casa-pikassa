@@ -1,0 +1,121 @@
+{% 
+    set 
+    _slideContent =
+    ''
+%}
+{% if __scope.variable == 'light' %}
+    {% 
+        set 
+        _slideContent = 
+        'slide__content_dark'
+    %}
+{% endif %}
+
+<div class="block">
+    <div class="row" >
+        <div class="col xs-12 md-7">
+            {% include "modules/blockHeading.twig" with { "__scope": __scope.title } %}
+        </div>
+    </div>
+    {% for item in __scope.block.items %}
+
+        {% 
+            set 
+            _row,
+            _col_1,
+            _col_2 =
+            '',
+            '',
+            'lg-l-1'
+        %}
+        {% if loop.index is even %}
+            {% 
+                set 
+                _row,
+                _col_1,
+                _col_2 =
+                'row_reverse',
+                'lg-l-1',
+                ''
+            %}
+        {% endif %}
+
+
+        {% if __scope.isSlider == 'false' %}
+            <li class="row {{ _row }} slide">
+        {% else %}
+            <li class="row {{ _row }} slide slide_noSlider">
+        {% endif %}
+            <div class="col xs-12 md-8 lg-7 {{ _col_1 }}">
+                <div class="slide__image" style="background-image: url({{ item.img }})"></div>
+            </div>
+            <div class="col xs-12 md-4 lg-4 {{ _col_2 }} slide__content {{ _slideContent }}">
+                <div class="slide__firstText">
+                    <div class="slide__title">
+                        <p>{{ item.title.first }}</p>
+                        {% if item.title.last is defined %}
+                            <p>{{ item.title.last }}</p>
+                        {% endif %}
+                    </div>
+
+                    {% set listType = '' %}
+                    
+                    {% if item.list_type == 'bullet' %}
+                        {% set listType = 'listItem_bullet' %}
+                        {% set listTypeList = 'slide__list_bullet' %}
+                    {% endif %}
+
+                    {% if item.list_type == 'cloud' %}
+                        {% set listType = 'listItem_cloud' %}
+                        {% set listTypeList = 'slide__list_cloud' %}
+                    {% endif %}
+                    <ul class="slide__list {{ listTypeList }}">
+                        {% for list_item in item.list %}
+                            <li class="listItem {{ listType }}">
+                                {% if list_item.icon is defined %}
+                                    <span class="listItem__icon">
+                                        <img src="{{ list_item.icon }}">
+                                    </span>
+                                {% endif %}
+
+                                 {% if item.list_type == 'cloud' %}
+                                    <span class="listItem__text" 
+                                            style="
+                                            font-size: {{ list_item.size }}px; 
+                                            font-weight: {{ list_item.weight }};
+                                            text-transform: {{ list_item.transform }};
+                                            line-height: {{ list_item.height }}px;">
+                                        {{ list_item.text }}
+                                    </span>
+                                {% else %}
+                                    <span class="listItem__text">
+                                        {{ list_item.text }}
+                                    </span>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="slide__lastText">
+                    <div class="slide__label">
+                        {{ item.label }}
+                    </div>
+                    <div class="slide__links">
+                        {% if item.btn is defined %}
+                            <a class="btn" {{ item.btn.action }}>
+                                {{ item.btn.text }}
+                            </a>
+                        {% endif %}
+                        {% if item.link is defined %}
+                            <span>
+                                <a class="link {{ _linksVar }}" href="{{ item.link.url }}">
+                                    {{ item.link.text }}
+                                </a>
+                            </span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+</div>        

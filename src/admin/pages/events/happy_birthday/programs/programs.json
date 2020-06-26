@@ -1,0 +1,40 @@
+{
+    "__modules": {
+        "breadcrumbs": [
+            {
+                "data": {
+                    "text": "Главная",
+                    "link": "/"
+                }
+            },
+            {
+                "data": {
+                    "text": "Мероприятия",
+                    "link": "/events"
+                }
+            },
+            {
+                "data": {
+                    "text": "Дни рождения",
+                    "link": "/events/happy-birthday"
+                }
+            },
+            {
+                "data": {
+                    "text": "Программы дней рождений"
+                }
+            }
+        ],
+        "post": {
+            "json": "pages/events/happy_birthday/programs/post.json"
+        },
+        "whatElse": {
+            "json": "blocks/whatElse.json" 
+        },  
+        "contacts": {
+            "json": "blocks/contacts.json"
+        } 
+    },
+    "__scripts": []
+  }
+  

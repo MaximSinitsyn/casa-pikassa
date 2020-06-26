@@ -1,0 +1,15 @@
+
+/// Базовые размеры приложения, используется для построения отступов
+$size: 10px;
+
+$breakpoints: (
+    xs: 'max-width: 420px',
+    sm: 'min-width: 421px',
+    md: 'min-width: 781px',
+    lg: 'min-width: 961px',
+    hg: 'min-width: 1201px',
+);
+
+$max-width: 1240px;
+
+$_base_path: '../images/';

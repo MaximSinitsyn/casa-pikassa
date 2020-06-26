@@ -1,0 +1,46 @@
+{
+    "__modules": {
+        "breadcrumbs": [
+            {
+                "data": {
+                    "text": "Главная",
+                    "link": "/"
+                }
+            },
+            {
+                "data": {
+                    "text": "Мероприятия",
+                    "link": "/events"
+                }
+            },
+            {
+                "data": {
+                    "text": "Дни рождения",
+                    "link": "/events/happy-birthday"
+                }
+            },
+            {
+                "data": {
+                    "text": "Программы дней рождений",
+                    "link": "/events/happy-birthday/programs"
+                }
+            },
+            {
+                "data": {
+                    "text": "Загадочная Япония: чайная медитация"
+                }
+            }
+        ],
+        "post": {
+            "json": "pages/events/happy_birthday/programs/mysterious-japan/post.json"
+        },
+        "whatElse": {
+            "json": "blocks/whatElse.json" 
+        },  
+        "contacts": {
+            "json": "blocks/contacts.json"
+        } 
+    },
+    "__scripts": []
+  }
+  

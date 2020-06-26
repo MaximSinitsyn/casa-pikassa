@@ -1,0 +1,246 @@
+.mainMenu {
+    display: flex;
+    align-items: center;
+
+    &__body {
+        margin: -5px -10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        position: relative;
+        padding: 5px 10px 0;
+    }
+
+    &__itemInner {
+        display: flex;
+        position: relative;  
+        z-index: 0;
+    }
+
+    &__item:hover &__itemInner {
+        z-index: 3;
+    }
+
+    &__item:hover + &__item &__itemInner {
+        z-index: 0;
+    }
+
+    &__link {
+        white-space: nowrap;
+        font-weight: 700;
+        color: $dark;
+        border-bottom: 1px solid transparent;
+        transition: 150ms 0ms linear;
+        cursor: pointer;
+    }
+
+    &__item:hover &__link {
+        color: $energized;
+        border-bottom: 1px solid $energized;
+    }
+
+    &__item_active &__link {
+        border-bottom: 1px dashed $dark;
+    }
+
+    &__dropDown {
+        padding-top: 60px;
+        top: -10px !important;
+        z-index: 1;
+    }
+
+    &_white:not(.scroll) &__link {
+        color: #fff;
+    }
+
+    &_white:not(.scroll) &__item:hover &__link {
+        color: $energized;
+        border-bottom: 1px solid $energized;
+    }
+
+    &_white:not(.scroll) &__item_active &__link {
+        border-bottom: 1px dashed #fff;
+    }
+}
+
+.dropDownMenu {
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+    margin-top: -5px;
+
+    &__item + &__item {
+        margin-top: size(1);
+    }
+
+    &__itemInner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__dropIcon {
+        position: relative;
+        height: 14px;
+        width: 14px;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            background: $dark;
+            position: absolute;
+            transition: 150ms 0ms linear;
+        }
+
+        &::before {
+            height: 14px;
+            width: 4px;
+            left: 5px;
+        }
+
+        &::after {
+            height: 4px;
+            width: 14px;
+            top: 5px;
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                background: $energized;
+            }
+        }
+    }
+
+    &__item.uk-open &__dropIcon {
+        &::before {
+            transform: rotate(90deg);
+            background: $energized;
+        }
+
+        &::after {
+            opacity: 0;
+        }
+    }
+
+    &__link {
+        color: $dark;
+        text-align: left;
+        font-weight: 700;
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        transition: 150ms 0ms linear;
+        cursor: pointer;
+    }
+
+    &__item_active > &__itemInner > a {
+        border-bottom: 1px dashed $dark;
+    }
+
+    &__item > &__itemInner > a:hover {
+        color: $energized;
+        border-bottom: 1px solid $energized;
+    }
+    
+    &__item &__item &__link {
+        font-weight: 400;
+    }
+
+    &__item &__item {
+        margin-top: 5px;
+    }
+
+    &__item &__item + &__item {
+        margin-top: size(1);
+    }
+
+    &__item &__item:last-child {
+        margin-bottom: size(2);
+    }
+}
+
+[class*=uk-navbar-dropdown-bottom] {
+    margin-top: -5px;
+    left: auto !important;
+    margin-left: -25px;
+}
+
+.menu {    
+    display: flex;
+    align-items: center;
+
+    &#{&}_mobileBtn {
+        height: size(2);
+        width: size(3);
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &#{&}_mobileBtn &__btn {
+        height: 4px;
+        width: 100%;
+        background: $dark;
+        transition: 150ms 50ms linear;
+
+        &::before,
+        &::after {
+            content: '';
+            height: 4px;
+            width: 100%;
+            display: block;
+            position: absolute;
+            background: $dark;
+            transition: 150ms 50ms linear;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    #{&}#{&}_white#{&}_mobileBtn &__btn {
+        background: #fff;
+
+        &::after,
+        &::before {
+            background: #fff;
+        }
+    }
+
+    .scroll #{&}#{&}_white#{&}_mobileBtn &__btn {
+        background: $dark;
+
+        &::after,
+        &::before {
+            background: $dark;
+        }
+    }
+
+    .uk-offcanvas-page #{&}#{&}_white#{&}_mobileBtn &__btn {
+        background: transparent;
+    }
+
+    .uk-offcanvas-page #{&}_mobileBtn &__btn {
+        background: transparent;
+        transition: 150ms 0ms linear;
+
+        &::before {
+            top: calc(50% - 1px);
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            bottom: calc(50% - 2px);
+            transform: rotate(-45deg);
+        }
+    }
+}

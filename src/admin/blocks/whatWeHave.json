@@ -1,0 +1,101 @@
+{
+    "items": [
+        {
+            "data": {
+                "img": "/images/what/workshop.png",
+                "title": {
+                    "first": "мастер-класс на день рождение"
+                },
+                "short_name": "мастер-классы",
+                "list_type": "cloud",
+                "list": [
+                    {
+                        "text": "Декупаж",
+                        "size": "22",
+                        "height": "30",
+                        "weight": "700",
+                        "transform": "normal"
+                    },
+                    {
+                        "text": "Эбру",
+                        "size": "18",
+                        "height": "30",
+                        "weight": "200",
+                        "transform": "uppercase"
+                    },
+                    {
+                        "text": "Скрапбукинг",
+                        "size": "24",
+                        "height": "30",
+                        "weight": "700",
+                        "transform": "normal"
+                    },
+                    {
+                        "text": "Винтаж",
+                        "size": "16",
+                        "height": "20",
+                        "weight": "700",
+                        "transform": "normal"
+                    },
+                    {
+                        "text": "Масло и акварель",
+                        "size": "20",
+                        "height": "20",
+                        "weight": "700",
+                        "transform": "uppercase"
+                    },
+                    {
+                        "text": "Флористика",
+                        "size": "26",
+                        "height": "30",
+                        "weight": "200",
+                        "transform": "normal"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Узнать подробнее",
+                    "action": "href=/events/happy-birthday/programs"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/what/games.png",
+                "title": {
+                    "first": "Проведение квестов"
+                },
+                "short_name": "Квесты",
+                "list_type": "cloud",
+                "list": [
+                    {
+                        "text": "Живые",
+                        "size": "28",
+                        "height": "30",
+                        "weight": "200",
+                        "transform": "uppercase"
+                    },
+                    {
+                        "text": "Классические",
+                        "size": "22",
+                        "height": "30",
+                        "weight": "700",
+                        "transform": "uppercase"
+                    },
+                    {
+                        "text": "Детективные",
+                        "size": "26",
+                        "height": "30",
+                        "weight": "200",
+                        "transform": "normal"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "href=/events/happy-birthday/programs"
+                }
+            }
+        }
+    ]
+}

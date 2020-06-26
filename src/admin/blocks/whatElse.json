@@ -1,0 +1,51 @@
+{
+    "template": {
+        "data": "eventsSlide"
+    },
+    "title": {
+        "data": {
+            "main": "Что еще?",
+            "sub": "Очень уютная, светлая и креативная арт площадка для проведения мероприятий в 1 мин от м. Таганская"
+        }
+    },
+    "slides": {
+        "slides": [
+            {
+                "data": {
+                    "img": "/images/whatElse/photo.jpg",
+                    "text": {
+                        "main": "Фотосъемка",
+                        "sub": "3500 руб./час"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "img": "/images/whatElse/furshet.jpg",
+                    "text": {
+                        "main": "Фуршет",
+                        "sub": "от 500 руб./чел"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "img": "/images/whatElse/ballon.jpg",
+                    "text": {
+                        "main": "Воздушные шарики",
+                        "sub": "1900 руб./ 25 шт."
+                    }
+                }
+            },
+            {
+                "data": {
+                    "img": "/images/whatElse/cake.jpg",
+                    "text": {
+                        "main": "Торт",
+                        "sub": "1500 руб./кг."
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+<div class="row breadcrumbs xs-off md">
+    <ul class="col xs-off md md-12 breadcrumbs__container">
+        {% for item in __scope %}
+            <li class="breadcrumbs__item">
+                {% if item.link is defined %}
+                    <a class="breadcrumbs__link link" href="{{ item.link }}">{{ item.text }}</a>
+                {% else %}
+                    <span class="breadcrumbs__active">{{ item.text }}</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

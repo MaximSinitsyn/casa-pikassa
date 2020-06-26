@@ -1,0 +1,23 @@
+{
+    "__modules": {
+        "head": {
+            "json": "pages/afisha/anti-lecture/head.json"
+        },
+        "programm": {
+            "json": "pages/afisha/anti-lecture/programm.json"
+        },
+        "tariffs": {
+            "json": "pages/afisha/anti-lecture/tariffs.json"
+        },
+        "lectures": {
+            "json": "pages/afisha/anti-lecture/lectures.json"
+        },
+        "commentsSlider": {
+            "json": "blocks/commentsSlider.json"
+        },
+        "contacts": {
+            "json": "blocks/contacts.json"
+        }  
+    },
+    "__scripts": []
+}

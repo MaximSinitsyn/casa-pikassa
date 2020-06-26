@@ -1,0 +1,74 @@
+{
+    "title": {
+        "data": {
+            "main": "Программа мероприятий",
+            "sub": "Получите новые эмоции и знания от замечательных приглашенных лекторов"
+        }
+    },
+    "programm": [
+        {
+            "data": {
+                "title": "Март",
+                "columns": {
+                    "sm": "sm-6",
+                    "md": "md-4"
+                },
+                "slides": [
+                    {
+                        "img": "/images/anti-lecture/1.jpg",
+                        "text": {
+                            "main": "Климт",
+                            "sub": "13 Марта"
+                        }
+                    },
+                    {
+                        "img": "/images/anti-lecture/2.jpg",
+                        "text": {
+                            "main": "Ван Гог",
+                            "sub": "21 Марта"
+                        }
+                    },
+                    {
+                        "img": "/images/anti-lecture/2.jpg",
+                        "text": {
+                            "main": "Пикассо",
+                            "sub": "23 Марта"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "title": "Апрель",
+                "columns": {
+                    "sm": "sm-6",
+                    "md": "md-4"
+                },
+                "slides": [
+                    {
+                        "img": "/images/anti-lecture/1.jpg",
+                        "text": {
+                            "main": "Климт",
+                            "sub": "13 Марта"
+                        }
+                    },
+                    {
+                        "img": "/images/anti-lecture/2.jpg",
+                        "text": {
+                            "main": "Ван Гог",
+                            "sub": "21 Марта"
+                        }
+                    },
+                    {
+                        "img": "/images/anti-lecture/3.jpg",
+                        "text": {
+                            "main": "Пикассо",
+                            "sub": "23 Марта"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

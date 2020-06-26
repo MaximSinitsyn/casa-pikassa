@@ -1,0 +1,16 @@
+.tariffs {
+    background-size: 400px;
+    width: 100%;
+    
+    &__col + &__col {
+        margin-top: size(8);
+
+        @include media-query('md') {
+            margin-top: size(6);
+        }
+
+        @include media-query('lg') {
+            margin-top: 0;
+        }
+    }
+}

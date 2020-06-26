@@ -1,0 +1,27 @@
+{
+    "__modules": {
+      "head": {
+        "json": "pages/events/happy_birthday/head.json"
+      },
+      "ageBirthdayTabs": {
+         "json": "pages/events/happy_birthday/ageBirthdayTabs.json" 
+      },
+      "themesBirthday": {
+        "json": "pages/events/happy_birthday/themesBirthday.json" 
+      },
+      "whatWeHave": {
+        "json": "pages/events/happy_birthday/whatWeHave.json" 
+      },
+      "rent": {
+        "json": "pages/events/happy_birthday/rent.json" 
+      },
+      "whatElse": {
+        "json": "blocks/whatElse.json" 
+      },  
+      "contacts": {
+        "json": "blocks/contacts.json"
+      } 
+    },
+    "__scripts": []
+  }
+  

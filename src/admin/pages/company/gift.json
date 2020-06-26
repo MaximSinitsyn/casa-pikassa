@@ -1,0 +1,8 @@
+{
+    "variable": {
+        "data": "light"
+    },
+    "main": {
+        "json": "pages/company/gift_block.json"
+    }
+}

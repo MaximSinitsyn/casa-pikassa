@@ -1,0 +1,189 @@
+{
+    "title": {
+        "data": {
+            "main": "Шерлок: детективное приключение"
+        }
+    },
+    "post_img": {
+        "data": "/images/packs/sherlok.png"
+    },
+    "post_type": {
+        "data": ""
+    },
+    "list": [
+        {
+            "data": {
+                "text": "От 15 лет",
+                "icon": "/icon/cake_dark.svg",
+                "type": "listItem_reverse"
+            }
+        },
+        {
+            "data": {
+                "text": "До 8 человек",
+                "icon": "/icon/users_dark.svg",
+                "type": "listItem_reverse"
+            }
+        }
+    ],
+    "text": {
+        "data": "<p>В этот раз вы договорились встретиться в необычном месте… Сегодня вы с друзьями встречаетесь прямо на месте преступления. Только что именно здесь произошло похищение и именно вам предстоит распутать его по горячим следам. В процессе расследования вам предстоит проявить находчивость и смекалку, быстро реагировать и не боятся выдвигать смелые предположения. Будьте внимательны коварный Мориарти обязательно приготовил для вас ловушку…</p><p>Выберите подходящий вариант дня рождения в стиле Шерлок</p>"
+    },
+    "sidebar_title": {
+        "data": "Другие программы"
+    },
+    "heading": {
+        "data": ""
+    },
+    "blockMod": {
+        "data": "block_smallOffset"
+    },
+    "template": {
+        "data": "components/tariffs.twig"
+    },
+    "tariffs": [
+        {
+            "data": {
+                "title": "Minimal",
+                "sub_title": "3 часа",
+                "list": [
+                    {
+                        "text": "Квест приключение «Шерлок: The game is on» (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Детективные Настольные игры: Cluedo, Мистериум, Lady Alice, Маскарад, Dixit"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "3 500 руб.",
+                        "value_old": "6 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Standart",
+                "sub_title": "4 часа",
+                "list": [
+                    {
+                        "text": "Квест приключение «Шерлок: The game is on» (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Детективные Настольные игры: Cluedo, Мистериум, Lady Alice, Маскарад, Dixit"
+                    },
+                    {
+                        "text": "«Mafia» или «Данетки» с ведущим"
+                    },
+                    {
+                        "text": "Скидка на аренду зала — 5%"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "6 000 руб.",
+                        "value_old": "10 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Premium",
+                "sub_title": "5 часов",
+                "list": [
+                    {
+                        "text": "Квест приключение «Шерлок: The game is on» (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Детективные Настольные игры: Cluedo, Мистериум, Lady Alice, Маскарад, Dixit"
+                    },
+                    {
+                        "text": "«Mafia» или «Данетки» с ведущим"
+                    },
+                    {
+                        "text": "Скидка на аренду зала — 5%"
+                    },
+                    {
+                        "text": "Скидка 10% на аренду залов"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "9 000 руб.",
+                        "value_old": "14 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        }
+    ],
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Шерлок: детективное приключение",
+                    "link": "/events/happy-birthday/programs/sherlok"
+                },
+                {
+                    "title": "Гарри Поттер: пропавшее заклинание",
+                    "link": "/events/happy-birthday/programs/harry-potter"
+                },
+                {
+                    "title": "Маленький принц: доброе приключение",
+                    "link": "/events/happy-birthday/programs/small-prince"
+                },
+                {
+                    "title": "Kids Party: для маленьких непосед",
+                    "link": "/events/happy-birthday/programs/kids-party"
+                },
+                {
+                    "title": "Gangster Party: вечеринка в стиле 30-х",
+                    "link": "/events/happy-birthday/programs/gangster-party"
+                },
+                {
+                    "title": "Супергерои: вечеринка с любимыми персонажами",
+                    "link": "/events/happy-birthday/programs/super-heroes"
+                },
+                {
+                    "title": "Пижамная вечеринка",
+                    "link": "/events/happy-birthday/programs/pajama-party"
+                },
+                {
+                    "title": "Загадочная Япония: чайная медитация",
+                    "link": "/events/happy-birthday/programs/mysterious-japan"
+                },
+                {
+                    "title": "Шпионская вечеринка: детективное приключение в конце 40-х",
+                    "link": "/events/happy-birthday/programs/spy-party"
+                },
+                {
+                    "title": "Алиса в стране чудес: безумное чаепитие",
+                    "link": "/events/happy-birthday/programs/alice-in-wonderland"
+                }
+            ]
+        }
+    }
+}

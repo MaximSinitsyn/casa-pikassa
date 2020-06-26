@@ -1,0 +1,24 @@
+{
+    "__modules": {
+      "head": {
+        "json": "pages/rent/head.json"
+      },
+      "floors": {
+        "json": "blocks/floors.json"
+      },
+      "rooms": {
+        "json": "pages/rent/rooms.json"
+      },
+      "counter": {
+        "json": "blocks/counter.json"
+      },  
+      "commentsSlider": {
+        "json": "blocks/commentsSlider.json"
+      },
+      "call_to_action": {
+        "json": "pages/rent/call_to_action.json"
+      }
+    },
+    "__scripts": []
+  }
+  

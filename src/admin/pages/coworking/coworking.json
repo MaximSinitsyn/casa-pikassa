@@ -1,0 +1,27 @@
+{
+    "__modules": {
+      "head": {
+        "json": "pages/coworking/head.json"
+      },
+      "tariffs": {
+        "json": "pages/coworking/tariffs.json"
+      },
+      "roomsSlider": {
+        "json": "pages/coworking/roomsSlider.json"
+      },
+      "advantages": {
+        "json": "pages/coworking/advantages.json"
+      }, 
+      "counter": {
+        "json": "blocks/counter.json"
+      },  
+      "commentsSlider": {
+        "json": "blocks/commentsSlider.json"
+      },  
+      "contacts": {
+        "json": "blocks/contacts.json"
+      }
+    },
+    "__scripts": []
+  }
+  

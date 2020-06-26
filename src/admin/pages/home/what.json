@@ -1,0 +1,90 @@
+{
+    "title": {
+        "data": {
+            "main": "У нас есть:",
+            "sub": "А знаете ли вы что «Casa» в переводе с испанского значит дом. Мы создавали и оформляли его с любовью, специально для вас."
+        }
+    },
+    "items": [
+        {
+            "data": {
+                "title": "Антикафе",
+                "img": "images/what/cafe.png",
+                "text": [
+                    "От 3 руб./мин.",
+                    "Стоп-чек 700 руб."
+                ],
+                "btn": {
+                    "text": "Узнать подробнее",
+                    "link": "href=/cafe"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Креативный коворкинг",
+                "img": "images/what/coworking.png",
+                "text": [
+                    "Абонемент от 6 000 руб."
+                ],
+                "btn": {
+                    "text": "Узнать подробнее",
+                    "link": "href=/coworking"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Мастерская",
+                "img": "images/what/workshop.png",
+                "text": [
+                    "Много различных мастер-классов"
+                ],
+                "btn": {
+                    "text": "Узнать подробнее",
+                    "link": "href=/workshop"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Квесты и игры с ведущим",
+                "img": "images/what/games.png",
+                "text": [
+                    "От 3 500 руб."
+                ],
+                "btn": {
+                    "text": "Узнать подробнее",
+                    "link": "href=/workshop"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Дни рождения и праздники",
+                "img": "images/what/birthday.png",
+                "text": [
+                    "От 3 500 руб."
+                ],
+                "btn": {
+                    "text": "Узнать подробнее",
+                    "link": "href=/events/happy-birthday"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Корпоративным клиентам",
+                "img": "images/what/corpclients.png",
+                "text": [
+                    "Аренда залов",
+                    "Организация мероприятий"
+                ],
+                "btn": {
+                    "text": "Узнать подробнее",
+                    "link": "href=/corporate-client"
+                }
+            }
+        }
+    ]
+}

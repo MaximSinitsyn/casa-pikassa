@@ -1,0 +1,273 @@
+{% 
+    set 
+    _block, 
+    _linksVar,
+    _arrows,
+    _slideNavArrow,
+    _sliderItem,
+    _slideContent,
+    _mod = 
+    'block_dark',
+    'link_white',
+    '',
+    '',
+    '',
+    '',
+    'blockHeading_white'
+%}
+{% if __scope.variable == 'light' %}
+    {% 
+        set 
+        _block, 
+        _linksVar,
+        _arrows,
+        _slideNavArrow,
+        _sliderItem,
+        _slideContent,
+        _mod = 
+        'sliderBlock_light', 
+        '',
+        'arrows_dark',
+        'sliderNav__arrow_dark',
+        'sliderGroupLinks__item_dark',
+        'slide__content_dark',
+        ''
+    %}
+{% endif %}
+
+{% if __scope.block_type == 'overlay' %}
+    {% set _block = 'block_overlay' %}
+{% endif %}
+
+{% set slides = __scope.slides %}
+{% if __scope.slides.slides is defined  %}
+    {% set slides = __scope.slides.slides %}
+{% endif %}
+
+<div class="sliderBlock block {{ _block }}">
+    <div id="slideshow_{{ __scope.id }}" uk-slideshow="animation: fade; finite: true; draggable: false;">
+        <div class="row" >
+            <div class="col xs-12 md-7">
+                {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__mod": _mod ~ " blockHeading_noOffset" } %}
+            </div>
+            <div class="col xs-12 md-5 md-end xs-top">
+                <div class="sliderBlock__rightHeader">
+                    {% if __scope.tabs is defined %}
+                        <div class="tabLinks">
+                            {% for slide in slides %}
+                                {% if loop.index == 1 %}
+                                    {% set active = "btn" %}
+                                {% else %}
+                                    {% set active = "link" %}
+                                {% endif %}
+                                        
+                                
+                                <button class="tabLinks__item" uk-slideshow-item="{{ loop.index - 1 }}">
+                                    <span class="tabLinks__caption">
+                                        {{ slide.short_name }}
+                                    </span>
+                                </button>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="sliderBlock__rightHeaderItem">
+                            <a class="link link_bold {{ _linksVar }}" href="{{ __scope.link.url }}">{{ __scope.link.text }}</a>
+                        </div>
+                        <div class="arrows {{ _arrows }} sliderBlock__rightHeaderItem">
+                            <svg class="arrows__arrow" onclick="UIkit.slider('#slider_{{ __scope.id }}').show('previous');" uk-slideshow-item="previous" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                <g>
+                                    <g id="chevron-right">
+                                        <polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153">
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg class="arrows__arrow" onclick="UIkit.slider('#slider_{{ __scope.id }}').show('next');" uk-slideshow-item="next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                <g>
+                                    <g id="chevron-right">
+                                        <polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153">
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    {% endif %}    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="col xs-12 uk-slideshow-items">
+
+            
+            {% for slide in slides %}
+                <li class="row slide">
+                        <div class="col xs-12 md-8 lg-7 uk-transition-slide-left">
+                            <div class="slide__image" style="background-image: url({{ slide.img }})"></div>
+                        </div>
+                        <div class="col xs-12 md-4 lg-4 lg-l-1 slide__content {{ _slideContent }} uk-transition-slide-right">
+                            <div class="slide__firstText">
+                                <div class="slide__title">
+                                    <p>{{ slide.title.first }}</p>
+                                    {% if slide.title.last is defined %}
+                                        <p>{{ slide.title.last }}</p>
+                                    {% endif %}
+                                </div>
+
+
+                                {% set listType = '' %}
+
+                                {% if slide.list_type == 'bullet' %}
+                                    {% set listType = 'listItem_bullet' %}
+                                {% endif %}
+
+                                {% if slide.list_type == 'cloud' %}
+                                    {% set listType = 'listItem_cloud' %}
+                                    {% set listTypeList = 'slide__list_cloud' %}
+                                {% endif %}
+
+
+                                {% if __scope.slide_type == 'text' %}
+                                    <div class="slide__subTitle">
+                                        {{ slide.sub_title }}
+                                    </div>
+                                    <ul class="slide__list {{ listTypeList }}">
+                                        {% for list_item in slide.iconList %}
+                                            <li class="listItem {{ listType }}">
+                                                {% if list_item.icon is defined %}
+                                                    <span class="listItem__icon">
+                                                        <img src="{{ list_item.icon }}">
+                                                    </span>
+                                                {% endif %}
+
+                                                {% if slide.list_type == 'cloud' %}
+                                                    <span class="listItem__text" 
+                                                        style="
+                                                            font-size: {{ list_item.size }}px; 
+                                                            font-weight: {{ list_item.weight }};
+                                                            text-transform: {{ list_item.transform }};
+                                                            line-height: {{ list_item.height }}px;">
+                                                        {{ list_item.text | raw }}
+                                                    </span>
+                                                {% else %}
+                                                    <span class="listItem__text">
+                                                        {{ list_item.text | raw }}
+                                                    </span>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <div class="slide__text">
+                                        {{ slide.text | raw }}
+                                    </div>
+                                {% else %}
+                                    <ul class="slide__list {{ listTypeList }}">
+                                        {% for list_item in slide.list %}
+                                            <li class="listItem {{ listType }}">
+                                                {% if list_item.icon is defined %}
+                                                    <span class="listItem__icon">
+                                                        <img src="{{ list_item.icon }}">
+                                                    </span>
+                                                {% endif %}
+
+                                                {% if slide.list_type == 'cloud' %}
+                                                    <span class="listItem__text" 
+                                                        style="
+                                                            font-size: {{ list_item.size }}px; 
+                                                            font-weight: {{ list_item.weight }};
+                                                            text-transform: {{ list_item.transform }};
+                                                            line-height: {{ list_item.height }}px;">
+                                                        {{ list_item.text | raw }}
+                                                    </span>
+                                                {% else %}
+                                                    <span class="listItem__text">
+                                                        {{ list_item.text | raw }}
+                                                    </span>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </div>
+                            <div class="slide__lastText">
+
+                                {% if slide.icon_set is defined %}
+                                    <div class="iconSet">
+                                        {% for icon in slide.icon_set %}
+                                            <div class="iconSet__item">
+                                                <img class="iconSet__icon" src="{{ icon }}">
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %} 
+                                <div class="slide__label">
+                                    {{ slide.label }}
+                                </div>
+                                <div class="slide__links">
+                                    {% if slide.btn is defined %}
+                                        <a class="btn" {{ slide.btn.action }}>
+                                            {{ slide.btn.text }}
+                                        </a>
+                                    {% endif %}
+                                    {% if slide.link is defined %}
+                                        <span>
+                                            <a class="link {{ _linksVar }}" href="{{ slide.link.url }}">
+                                                {{ slide.link.text }}
+                                            </a>
+                                        </span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}    
+            </ul>
+        </div>
+    </div>
+    {% if __scope.tabs is defined %}
+
+    {% else %}
+        <div id="slider_{{ __scope.id }}" class="row" uk-slider="finite: true; draggable: false;">
+            <div class="col xs-12">
+                <div class="sliderNav">
+                    <div class="uk-position-relative sliderNav__inner">
+                        <span class="uk-position-center-left-out sliderNav__arrow {{ _slideNavArrow }} sliderNav__arrow_left uk-invisible">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                <g>
+                                    <g id="chevron-right">
+                                        <polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153">
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+
+                        <div class="uk-slider-container sliderNav__container">
+                            <ul class="uk-slider-items sliderGroupLinks xs-start">
+                                {% for slide in slides %}
+                                    {% if loop.index == 1 %}
+                                        {% set active = "sliderGroupLinks__item_active" %}
+                                    {% else %}
+                                        {% set active = "" %}
+                                    {% endif %}
+                                    
+                                    <li class="col xs-12 sm-6 md-4 lg-3 xs-center sliderGroupLinks__li" onclick="UIkit.slideshow('#slideshow_{{ __scope.id }}').show({{ loop.index - 1 }});">
+                                        <div class="sliderGroupLinks__item {{ _sliderItem }} {{ active }}">
+                                            <span class="sliderGroupLinks__caption">{{ slide.short_name }}</span> 
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <span class="uk-position-center-right-out sliderNav__arrow {{ _slideNavArrow }} sliderNav__arrow_right">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                <g>
+                                    <g id="chevron-right">
+                                        <polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153">
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}    
+</div>

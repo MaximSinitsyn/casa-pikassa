@@ -1,0 +1,64 @@
+.block {
+    padding: size(6) 0; 
+
+    @include media-query('md') {
+        padding: size(11) 0; 
+    }
+
+    &_dark {
+        padding: size(4) 0;
+        background: $dark;
+
+        @include media-query('md') {
+            padding: size(9) 0; 
+        }
+    }
+
+    &_clear {
+        padding: 0; 
+    }
+
+    &_overlay {
+        background: $dark url(../images/rec.png);
+    }
+
+    &_image {
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+    }
+
+    &_image &__inner {
+        background: rgba($dark, 0.3);
+        padding-top: size(6);
+        padding-bottom: size(6);
+
+        @include media-query('md') {
+            padding-top: size(11);
+            padding-bottom: size(11);
+        }
+    }
+
+    &:not(&_dark):not(&_overlay):not(&_split):not(&_image) + &:not(&_dark):not(&_overlay):not(&_split):not(&_image),
+    .post + &:not(&_dark):not(&_overlay):not(&_split):not(&_image) {
+        padding-top: 0;
+        
+        & > .row:nth-child(1) {
+            padding-top: size(7);
+            border-top: 1px dashed rgba($dark, 0.5);
+
+            @include media-query('md') {
+                padding-top: size(12);
+            }
+        }
+    }
+
+    & + &_split {
+        padding-top: size(2);
+        margin-top: -#{size(10)};
+    }
+
+    &_smallOffset {
+        padding: size(2) 0; 
+    }
+}

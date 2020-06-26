@@ -1,0 +1,29 @@
+{
+  "__modules": {
+    "head": {
+      "json": "pages/home/head.json"
+    },
+    "what": {
+      "json": "pages/home/what.json"
+    },
+    "roomsSlider": {
+      "json": "pages/home/roomsSlider.json"
+    },
+    "eventsSlider": {
+      "json": "blocks/eventsSlider.json"
+    },  
+    "counter": {
+      "json": "blocks/counter.json"
+    },  
+    "commentsSlider": {
+      "json": "blocks/commentsSlider.json"
+    }, 
+    "antiLecture": {
+      "json": "blocks/antiLecture.json"
+    },  
+    "contacts": {
+      "json": "blocks/contacts.json"
+    }  
+  },
+  "__scripts": []
+}

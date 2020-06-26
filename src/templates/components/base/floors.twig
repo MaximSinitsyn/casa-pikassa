@@ -1,0 +1,63 @@
+<div class="block floorBlock">
+    <div class="row">
+        <div class="col xs-12 md-7">
+            {% include "modules/blockHeading.twig" with { "__scope": __scope.title } %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col xs-12 md-6">
+
+            <div class="floorBlock__tabsContainer">
+                <ul class="floorBlock__tabContent uk-switcher">
+                    <li>
+                        {% include "utils/floor_1.twig" %}
+                    </li>
+                    <li>
+                        {% include "utils/floor_2.twig" %}
+                    </li>
+                </ul>
+                <ul class="floorBlock__tabs tabLinks tabLinks_noOffset" uk-switcher="connect: .floorBlock__tabContent">
+                    <li class="tabLinks__itemWrap">
+                        <a class="tabLinks__item" href="#">
+                            <span class="tabLinks__caption">2й этаж</span>
+                        </a>
+                    </li>
+                    <li class="tabLinks__itemWrap">
+                        <a class="tabLinks__item" href="#">
+                            <span class="tabLinks__caption">5й этаж</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col xs-12 md-5 md-l-1">
+            <div class="floorBlock__infoBlock">
+                {% for room in __scope.rooms %}
+                    {% set active = '' %}
+                    {% if room.id == 'picasso' %}
+                        {% set active = 'floorBlock__infoBlockContent_active' %}
+                    {% endif %}
+                    <div class="floorBlock__infoBlockContent {{ active }}" id="{{ room.id }}">
+                        <div class="floorBlock__infoImage" style="background-image: url({{ room.image }})"></div>
+                        <div class="floorBlock__infoRow">
+                            <div class="floorBlock__infoTitle">
+                                <span>
+                                    {{ room.title }}
+                                </span>
+                                <span>
+                                    {{ room.sub_title }}
+                                <span>
+                            </div>
+                            <div class="floorBlock__links">
+                                <a class="link" href="{{ room.link.url }}">
+                                    {{ room.link.text }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

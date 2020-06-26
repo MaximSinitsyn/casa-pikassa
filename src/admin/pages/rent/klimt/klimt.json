@@ -1,0 +1,34 @@
+{
+    "__modules": {
+        "breadcrumbs": [
+            {
+                "data": {
+                    "text": "Главная",
+                    "link": "/"
+                }
+            },
+            {
+                "data": {
+                    "text": "Аренда залов",
+                    "link": "/rent"
+                }
+            },
+            {
+                "data": {
+                    "text": "Loft Климт 30 кв.м."
+                }
+            }
+        ],
+        "post": {
+            "json": "pages/rent/klimt/post.json"
+        },
+        "whatElse": {
+            "json": "blocks/whatElse.json" 
+        },  
+        "contacts": {
+            "json": "blocks/contacts.json"
+        } 
+    },
+    "__scripts": []
+  }
+  

@@ -1,0 +1,59 @@
+.link {
+    color: $dark;
+    transition: 150ms 0ms linear;
+    border-bottom: 1px dashed $dark;
+
+    &:hover {
+        text-decoration: none;
+        color: $energized;
+        border-bottom: 1px dashed $energized;
+    }
+
+    &_medium {
+        @include font(sm);
+    }
+
+    &_up {
+        text-transform: uppercase;
+    }
+
+    &_icon {
+        &::after {
+            content: "";
+            position: relative;
+            top: 1px;
+            background-image: url(/icon/exit-to-app-button_dark.svg);
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            background-size: cover;
+            transition: 150ms 0ms linear;
+        }
+
+        &:hover::after {
+            background-image: url(/icon/exit-to-app-button_energized.svg);
+        }
+    }
+
+    &_white {
+        color: #fff;
+        border-bottom: 1px dashed #fff;
+
+        &:hover {
+            color: $energized;
+            border-bottom: 1px dashed $energized;
+        }
+    }
+
+    &_noBorder {
+        border-bottom: 1px dashed transparent;
+
+        &:hover {
+            border-bottom: 1px dashed transparent;
+        }
+    }
+
+    &_bold {
+        font-weight: 700;
+    }
+}

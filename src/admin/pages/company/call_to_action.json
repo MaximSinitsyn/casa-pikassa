@@ -1,0 +1,8 @@
+{
+    "variable": {
+        "data": "dark"
+    },
+    "main": {
+        "json": "blocks/call_to_action.json"
+    }
+}

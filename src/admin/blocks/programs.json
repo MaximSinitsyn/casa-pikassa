@@ -1,0 +1,25 @@
+{
+    "slides": [
+        {
+            "data": {
+                "img": "/images/what/coworking.png",
+                "title": {
+                    "first": "Loft Климт",
+                    "last": "30 кв.м"
+                },
+                "short_name": "Loft Климт"
+            }
+        },
+    
+        {
+            "data": {
+                "img": "/images/what/coworking.png",
+                "title": {
+                    "first": "Loft Климт",
+                    "last": "30 кв.м"
+                },
+                "short_name": "Loft Климт222"
+            }
+        }
+    ]
+}

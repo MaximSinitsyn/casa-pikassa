@@ -1,0 +1,74 @@
+.post {
+    margin-bottom: size(2);
+    margin-top: size(12);
+
+    @include media-query('sm') {
+        margin-bottom: size(4);
+    }
+
+    @include media-query('lg') {
+        margin-bottom: size(8);
+    }
+
+    &__container {
+        padding: 0;
+    }
+
+    &__text {
+        @include font(md); 
+
+        ol {
+            list-style: decimal;
+            padding-left: size(1);
+        }
+
+        p,
+        p + *,
+        li + *  {
+            margin-top: size(1);
+        }
+
+        ul + *,
+        ol + *,
+        p + ul {
+            margin-top: size(2);
+        }
+
+        ol > li + li {
+            margin-top: size(4);
+        }
+
+        ul > li {
+            padding-left: size(2);
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: size(1);
+                height: size(1);
+                left: 0;
+                top: calc(#{size(1)} - #{size(1) / 2});
+                background: $energized;
+                border-radius: size(1);
+            }
+        }
+    }
+
+    &__container + &__text {
+        margin-top: size(2);
+
+        @include media-query('md') {
+            margin-top: size(4);
+        }
+    }
+
+    &__sidebar {
+        padding-top: 0;
+        
+        @include media-query('lg') {
+            border-left: 1px solid rgba($dark, 0.1);
+            padding-left: size(2);
+        }
+    }
+}

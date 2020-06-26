@@ -1,0 +1,162 @@
+{
+    "id": {
+        "data": "room"
+    },
+    "title": {
+        "data": {
+            "main": "Моне"
+        }
+    },
+    "template": {
+        "data": "components/imageSlider.twig"
+    },
+    "post_type": {
+        "data": "tabs"
+    },
+    "columns": {
+        "data": {
+            "md": "md-2"
+        }
+    },
+    "thumb_size": {
+        "data": "thumbnail_small"
+    },
+    "tabs_thumbs": {
+        "data": ""
+    },
+    "tabs_nav": {
+        "data": ""
+    },
+    "tabs": [
+        {
+            "data": {
+                "short_name": "Ван Гог",
+                "items": [
+                    {
+                        "img": "/images/rooms/mone/1.jpg"
+                    },
+                    {
+                        "img": "/images/rooms/mone/2.jpg"
+                    },
+                    {
+                        "img": "/images/rooms/mone/3.jpg"
+                    },
+                    {
+                        "img": "/images/rooms/mone/4.jpg"
+                    },
+                    {
+                        "img": "/images/rooms/mone/5.jpg"
+                    }
+                ]
+            }
+        }
+    ],
+    "list": [
+        {
+            "data": {
+                "text": "12 кв.м.",
+                "icon": "/icon/size.svg",
+                "type": "listItem_reverse"
+            }
+        }
+    ],
+    "text": {
+        "data": "<p>Мы делаем индивидуальную расстановку мебели под каждое мероприятие. У нас есть возможность поставить или убрать диванчики, столы или вовсе убрать всю мебель для проведения тренинга или практики. У нас есть пледы и йога-коврики.</p>"
+    },
+    "sidebar_title": {
+        "data": "Другие залы"
+    },
+    "heading": {
+        "data": ""
+    },
+    "blockMod": {
+        "data": "block_smallOffset"
+    },
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Loft Ван Гог 47 кв.м.",
+                    "link": "/rent/van-gog"
+                },
+                {
+                    "title": "Loft Климт 30 кв.м.",
+                    "link": "/rent/klimt"
+                },
+                {
+                    "title": "Сальвадор Дали 23 кв.м.",
+                    "link": "/rent/salvador"
+                },
+                {
+                    "title": "Пабло Пикассо 55 кв.м.",
+                    "link": "/rent/picasso"
+                },
+                {
+                    "title": "Малевич 20 кв.м.",
+                    "link": "/rent/malevich"
+                },
+                {
+                    "title": "Моне 12 кв.м.",
+                    "link": "/rent/mone",
+                    "extended": {
+                        "icons": [
+                            {
+                                "src": "/icon/coffee-cup.svg",
+                                "text": "Чай, кофе и сладости включены в стоимость"
+                            },
+                            {
+                                "src": "/icon/wifi.svg",
+                                "text": "Бесплатный Wi-Fi"
+                            },
+                            {
+                                "src": "/icon/board.svg",
+                                "text": "Флипчарт"
+                            },
+                            {
+                                "src": "/icon/projector.svg",
+                                "text": "Проектор и экран для презентаций"
+                            },
+                            {
+                                "src": "/icon/parking.svg",
+                                "text": "Бесплатная парковка во дворе"
+                            },
+                            {
+                                "src": "/icon/smile.svg",
+                                "text": "Отличное настроение"
+                            }
+                        ],
+                        "btn": {
+                            "text": "Забронировать",
+                            "action": ""
+                        },
+                        "links": [
+                            {
+                                "text": "Переговорная под запрос",
+                                "action": "#"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "label": "Будние",
+                                "caption": "1600 руб. час"
+                            },
+                            {
+                                "label": "Выходные и пт. с 18:00",
+                                "caption": "1900 руб."
+                            },
+                            {
+                                "label": "Минимальное время аренды",
+                                "caption": "2 часа"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "Ренуар 12 кв.м.",
+                    "link": "/rent/renuar"
+                }
+            ]
+        }
+    }
+}

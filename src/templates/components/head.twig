@@ -1,0 +1,90 @@
+<div class="head" style="background-image: url('{{ __scope.background }}')">
+    <div class="head__container">
+        {% if __scope.videoBack is defined%}
+            <div class="head__videoWrapper">
+                <video id="video" class="head__video" loop="" muted="" autoplay="" poster="{{ __scope.background }}" >
+                    <source src="{{ __scope.videoBack }}" type="video/mp4">
+                </video>
+                <div class="head__videoOverlay"></div>
+            </div>
+        {% endif %}
+        <div class="row xs-bottom head__content">
+            <div class="row">
+                <div class="col xs-12 md-10 lg-12 xs-center md-start">
+                    {% if __scope.typed is defined %}
+                        
+                        <div id="typed-strings">
+                            {% for item in __scope.typed %}
+                                <p>{{ item.text }}</p>
+                            {% endfor %}
+                        </div>
+
+                        <div class="head__typed xs-center md-start">    
+                            <div class="head__heading">
+                                Место для <span id="typed"></span>
+                            </div>
+                        </div>
+
+                        <script>
+                            var typed = new Typed('#typed', {
+                                stringsElement: '#typed-strings',
+                                loop: true,
+                                loopCount: Infinity,
+                                typeSpeed: 50,
+                                backSpeed: 35,
+                                backDelay: 1500,
+                            });
+                        </script>
+                    {% else %}
+                        <div class="head__heading">
+                            {{ __scope.heading }}
+                        </div>
+                    {% endif %}
+                </div>
+                
+                {% if __scope.description is defined %}
+                    <div class="col xs-12 xs-center md-7 md-start">    
+                        <div class="head__description">
+                            {{ __scope.description }}
+                        </div>
+                    </div> 
+                {% endif %}
+
+                {% if __scope.btn is defined %}
+                    <div class="col xs-12 xs-center md-8 md-start">    
+                        <div class="head__btn">
+                            <button class="btn btn_big" {{ __scope.btn.action }}>
+                                {{ __scope.btn.text }}
+                            </button>
+                        </div>
+                    </div> 
+                {% endif %}
+            </div>    
+
+            <div class="info info_absolute xs-off lg">
+                {% for item in __super.info %}
+                    <div class="info__infoItem">
+                        <div class="info__infoText">
+                            {% for text in item.text %}
+                                <p>{{ text }}</p>
+                            {% endfor %}
+                        </div>
+                        <img src="{{ item.img }}">
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="head__socialIcons">
+                <div class="socialIcons socialIcons_column">
+                    {% for item in __super.social_icons %}
+                        <a href="{{ item.link }}" target="_blank" class="socialIcons__item">
+                            {{ item.src | raw }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+

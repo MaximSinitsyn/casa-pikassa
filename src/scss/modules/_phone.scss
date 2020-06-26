@@ -1,0 +1,51 @@
+.phone {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        color: $dark;
+        font-weight: 700;
+        margin-right: 10px;
+        white-space: nowrap;
+
+        &:hover {
+            text-decoration: none;
+            color: $dark;
+        }
+    }
+
+    &_label &__link {
+        @include heading(sm);
+
+        color: $energized;
+        margin-right: 0;
+    }
+
+    &_white &__link {
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .scroll &_white &__link {
+        color: $dark;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    &__whatsapp {
+        display: flex;
+    }
+
+    &_white &__whatsapp svg {
+        fill: #fff;
+    }
+
+    .scroll &_white &__whatsapp svg {
+        fill: $dark;
+    }
+}

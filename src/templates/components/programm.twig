@@ -1,0 +1,15 @@
+<div class="block">
+    <div class="row" >
+        <div class="col xs-12 md-7">
+            {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__mod": _mod ~ " blockHeading_noOffset" } %}
+        </div>
+    </div>
+    {% for item in __scope.programm %}
+        <div class="row">
+            <div class="col xs-12">
+                <span class="label label_big">{{ item.title }}</span>
+            </div>
+        </div>
+        {% include "components/eventsSlide.twig" with { "__scope": item, __var: 'notSlider' } %}
+    {% endfor %}
+</div>    

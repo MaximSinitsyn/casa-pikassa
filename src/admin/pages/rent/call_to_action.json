@@ -1,0 +1,8 @@
+{
+    "variable": {
+        "data": "light"
+    },
+    "main": {
+        "json": "blocks/call_to_action.json"
+    }
+}

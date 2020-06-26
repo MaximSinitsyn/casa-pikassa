@@ -1,0 +1,18 @@
+{
+    "background": {
+        "data": "/images/coffee_back.png"
+    },
+    "image": {
+        "data": "/images/coffee_cup.png"
+    },
+    "title": {
+        "data": "Специальное предложение"
+    },
+    "text": {
+        "data": {
+            "one": "Тариф: To go",
+            "two": "100 руб. / 15 мин.",
+            "three": "Кофе/чай с собой в подарок!"
+        }
+    }
+}

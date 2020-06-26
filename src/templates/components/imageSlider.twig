@@ -1,0 +1,146 @@
+{% set thumb_size = "" %}
+{% if __scope.thumb_size is defined %}
+    {% set thumb_size = __scope.thumb_size %}
+{% endif %}
+
+<div class="row sliderBlock">
+    {% if __scope.tabs_nav is defined %}
+        {% for tab in __scope.tabs %}
+            {% set index = 0 %}
+            <div class="row" id="slideshow_{{ __scope.id }}_{{ index }}" uk-slideshow="animation: fade; finite: true" style="width: 100%; position: relative">
+                <ul class="col xs-12 uk-slideshow-items" style="width: 100%;"> 
+                    {% for item in tab.items %}
+                        <li class="slide xs-center">
+                            <img src="{{ item.img }}" style="width: 100%;"/>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+            <ul class="row xs-top"> 
+                {% 
+                    set
+                    xs,
+                    sm,
+                    md,
+                    lg = 
+                    'xs-4',
+                    '',
+                    'md-5',
+                    '' 
+                %}
+                {% if __scope.columns is defined %}
+                    {% if __scope.columns.xs is defined %}
+                        {% set xs = __scope.columns.xs %}
+                    {% endif %}
+
+                    {% if __scope.columns.sm is defined %}
+                        {% set sm = __scope.columns.sm %}
+                    {% endif %}
+
+                    {% if __scope.columns.md is defined %}
+                        {% set md = __scope.columns.md %}
+                    {% endif %}
+
+                    {% if __scope.columns.md is defined %}
+                        {% set lg = __scope.columns.lg %}
+                    {% endif %}
+                {% endif %}
+                {% for item in tab.items %}
+                    <li class="col {{xs}} {{sm}} {{md}} {{lg}}">
+                        <div onclick="UIkit.slideshow('#slideshow_{{ __scope.id }}_{{ index }}').show({{ loop.index - 1 }});" class="thumbnail {{ thumb_size }}" style="background-image: url({{ item.img }});"></div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    {% else %}
+        <div class="row">
+            <div class="col xs-12 md-8 xs-middle xs-center md-between">
+                <div>
+                    <ul class="tabLinks tabLinks_noOffset" uk-switcher="connect: .switcher-container">
+                        {% for tab in __scope.tabs %}
+                            {% if loop.index == 1 %}
+                                {% set active = "btn" %}
+                            {% else %}
+                                {% set active = "link" %}
+                            {% endif %}
+                                    
+                    
+                            <li class="tabLinks__item">
+                                <a href="#">
+                                    <span class="tabLinks__caption">
+                                        {{ tab.short_name }}
+                                    </span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col xs-12 md-4 xs-center md-end">    
+                <ul class="uk-switcher switcher-container">
+                    {% for tab in __scope.tabs %}
+                        <li>
+                            <div class="arrows arrows_dark col xs-12">
+                                <svg class="arrows__arrow" onclick="UIkit.slideshow('#slideshow_{{ __scope.id }}_{{ loop.index }}').show('previous');" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                    <g>
+                                        <g id="chevron-right">
+                                            <polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153">
+                                        </g>
+                                    </g>
+                                </svg>
+                                <svg class="arrows__arrow" onclick="UIkit.slideshow('#slideshow_{{ __scope.id }}_{{ loop.index }}').show('next');" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                    <g>
+                                        <g id="chevron-right">
+                                            <polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153">
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>  
+        </div>
+        <ul class="row uk-switcher switcher-container">
+            {% for tab in __scope.tabs %}
+                <li>
+                    <div class="row" id="slideshow_{{ __scope.id }}_{{ loop.index }}" uk-slideshow="animation: fade; finite: true" style="width: 100%; position: relative">
+                        <ul class="col xs-12 uk-slideshow-items" style="width: 100%;"> 
+                            {% for item in tab.items %}
+                                <li class="slide overlay">
+                                    <img src="{{ item.img }}" class="overlay__container"/>
+                                    {% if item.link is defined %}
+                                        <a href="{{ item.link }}" class="overlay__action">
+                                            <span class="btn btn_solid btn_medium btn_white">
+                                                Узнать подробнее
+                                            </span>
+                                        </a>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        {% if __scope.tabs_thumbs is defined %}
+            <ul class="row uk-switcher switcher-container">
+                {% set index = 0 %}
+                {% for tab in __scope.tabs %}
+                    {% set index = loop.index %}
+                    <li style="width: 100%;" class="xs-off md">
+                        <ul class="row xs-top"> 
+                            {% for item in tab.items %}
+                                <li class="col xs-12 md-3">
+                                    <div onclick="UIkit.slideshow('#slideshow_{{ __scope.id }}_{{ index }}').show({{ loop.index - 1 }});" class="thumbnail" style="background-image: url({{ item.img }});"></div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endif %}
+</div>  

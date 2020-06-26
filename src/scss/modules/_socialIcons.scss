@@ -1,0 +1,72 @@
+.socialIcons {
+    display: flex;
+
+    &_column {
+        flex-direction: row;
+
+        @include media-query('md') {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border: 2px solid #fff;
+        background: transparent;
+        box-sizing: content-box;
+        border-radius: 30px;
+        transition: 150ms 0ms linear;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        svg, path {
+            fill: #fff;
+            transition: 150ms 0ms linear;
+        }
+
+        &:hover {
+            background: #fff;
+
+            svg, path {
+                fill: $dark;
+            }
+        }
+    }
+
+    &_colored &__item {
+        border: 2px solid $energized;
+
+        svg, path {
+            fill: $energized;
+        }
+
+        &:hover {
+            background: $energized;
+
+            svg, path {
+                fill: $dark;
+            }
+        }
+    }
+
+    &:not(&_column) &__item + &__item {
+        margin-left: size(3);
+    }
+
+    &_column &__item + &__item {
+        margin-left: size(3);
+
+        @include media-query('md') {
+            margin-left: 0;
+            margin-top: size(3);
+        }
+    }
+}

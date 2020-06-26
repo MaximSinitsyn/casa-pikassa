@@ -1,0 +1,299 @@
+{
+    "title": {
+        "data": {
+            "main": "Тематические дни рождения",
+            "sub": "Почувствуйте себя героем сказки или телесериала, либо окунитесь в невероятный мир приключений"
+        }
+    },
+    "link": {
+        "data": {
+            "text": "Посмотреть все пакеты",
+            "url": "/events/happy-birthday/programs"
+        }
+    },
+    "id": {
+        "data": "themesBirthday"
+    },
+    "slides": [
+        {
+            "data": {
+                "img": "/images/packs/sherlok.png",
+                "title": {
+                    "first": "Детективное приключение"
+                },
+                "short_name": "Шерлок",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/sherlok"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/harry.png",
+                "title": {
+                    "first": "Пропавшее заклинание"
+                },
+                "short_name": "Гарри Поттер",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/harry-potter"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/prince.png",
+                "title": {
+                    "first": "Маленький принц"
+                },
+                "short_name": "Маленький принц",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/small-prince"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/kids.png",
+                "title": {
+                    "first": "Для маленьких непосед"
+                },
+                "short_name": "Kids Party",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/kids-party"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/gangster.png",
+                "title": {
+                    "first": "Вечеринка в стиле 30-х"
+                },
+                "short_name": "Gangster Party",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/gangster-party"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/superhero.png",
+                "title": {
+                    "first": "Вечеринка с любимыми персонажами"
+                },
+                "short_name": "Супергерои",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/super-heroes"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/pajamas.png",
+                "title": {
+                    "first": "Пижамная вечеринка"
+                },
+                "short_name": "Пижамная вечеринка",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/pajama-party"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/japan.png",
+                "title": {
+                    "first": "Загадочная Япония"
+                },
+                "short_name": "Загадочная япония",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/mysterious-japan"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/spy.png",
+                "title": {
+                    "first": "Детективное приключение в конце 40-х"
+                },
+                "short_name": "Шпионская вечеринка",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/spy-party"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/packs/alisa.png",
+                "title": {
+                    "first": "Алиса в стране чудес"
+                },
+                "short_name": "Алиса",
+                "list": [
+                    {
+                        "text": "До 10 человек",
+                        "icon": "/icon/users.svg"
+                    },
+                    {
+                        "text": "От 15 лет",
+                        "icon": "/icon/cake.svg"
+                    }
+                ],
+                "label": "От 3 500 руб.",
+                "btn": {
+                    "text": "Забронировать",
+                    "action": "#"
+                },
+                "link": {
+                    "text": "Подробнее",
+                    "url": "/events/happy-birthday/programs/alice-in-wonderland"
+                }
+            }
+        }
+    ]
+}

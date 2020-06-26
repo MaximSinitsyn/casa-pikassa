@@ -1,0 +1,114 @@
+.sidebarMenu {
+    padding: size(1);
+    width: 100%;
+
+    @include media-query('lg') {
+        padding: 0;
+    }
+
+    &__title {
+        @include heading(sm);
+
+        font-weight: 700;
+        border-bottom: 1px dashed rgba($dark, 0.2);
+        padding-bottom: size(2);
+        margin-bottom: size(2);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        order: 1;
+
+        &_active:not(:first-child) {
+            order: 0;
+            margin-bottom: size(2);
+        }
+    }
+
+    &__iconSet {
+        margin-top: size(2);
+    }
+
+    &__link {
+        @include font(md);
+
+        border-left: 5px solid rgba($dark, 0.1);
+        display: block;
+        padding-left: #{size(2) - 5px};
+        color: $dark;
+        transition: 150ms 0ms linear;
+
+        @include media-query('lg') {
+            padding-left: 0;
+            border-left: 0;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $energized;
+        }
+    }
+
+    &__item_active &__link {
+        font-weight: 700;
+        border-left: 5px solid $energized;
+        padding-left: #{size(2) - 5px};
+        cursor: default;
+
+        @include media-query('lg') {
+            margin-left: -#{size(2)};
+        }
+
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    &__item + &__item {
+        margin-top: size(2);
+    }
+
+    &__item + &__item_active {
+        margin-top: 0;
+    }
+
+    &__extended {
+        padding-bottom: size(3);
+        border-bottom: 1px dashed rgba($dark, 0.2);
+    }
+
+    &__extendedList {
+        margin-top: size(3); 
+    }
+
+    &__extendedItem {
+        @include font(md);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__extendedItem + &__extendedItem {
+        margin-top: size(2);
+    }
+
+    &__extendedLabel {
+        font-weight: 700;
+    } 
+    
+    &__extendedLabel + &__extendedCaption {
+        margin-top: size(1);
+    }
+
+    &__btn {
+        margin-top: size(3);
+    }
+
+    &__links {
+        margin-top: size(2);
+    }
+}

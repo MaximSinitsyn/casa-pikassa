@@ -1,0 +1,30 @@
+<div class="block promoBlock">
+    <div class="promoBlock__back promoBlock__back_front" 
+         style="background-image: url({{ __scope.background }})" >
+    </div>
+
+    <div class="row promoBlock__row">
+        <div class="col xs-12 md-6">
+            <div class="promoCard">
+                <div class="promoCard__title">
+                    {{ __scope.title }}
+                </div>
+                <div class="promoCard__text">
+                    <div class="promoCard__textInner">
+                        {{ __scope.text.one }}
+                    </div>
+                    <div class="promoCard__textInner promoCard__textInner_label">
+                        {{ __scope.text.two }}
+                    </div>
+                    <div class="promoCard__textInner">
+                        {{ __scope.text.three }}
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="promoBlock__image" style="background-image: url({{ __scope.image }})"></div>
+    </div>
+
+    <div class="promoBlock__blockOverlay"></div>
+</div>

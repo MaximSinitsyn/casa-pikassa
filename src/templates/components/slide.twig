@@ -1,0 +1,147 @@
+{% 
+    set 
+    _block, 
+    _linksVar,
+    _arrows,
+    _slideNavArrow,
+    _sliderItem,
+    _slideContent,
+    _mod = 
+    'block_dark',
+    'link_white',
+    '',
+    '',
+    '',
+    '',
+    'blockHeading_white'
+%}
+{% if __scope.variable == 'light' %}
+    {% 
+        set 
+        _block, 
+        _linksVar,
+        _arrows,
+        _slideNavArrow,
+        _sliderItem,
+        _slideContent,
+        _mod = 
+        'sliderBlock_light', 
+        '',
+        'arrows_dark',
+        'sliderNav__arrow_dark',
+        'sliderGroupLinks__item_dark',
+        'slide__content_dark',
+        ''
+    %}
+{% endif %}
+
+<div class="sliderBlock block">
+    <div class="row" >
+        <div class="col xs-12 md-7">
+            {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__mod": _mod ~ " blockHeading_noOffset" } %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col xs-12 md-8 lg-7">
+            <div class="slide__image" style="background-image: url({{ __scope.slide.img }})"></div>
+        </div>
+        <div class="col xs-12 md-4 lg-4 lg-l-1 slide__content {{ _slideContent }}">
+            <div class="slide__firstText">
+                {% if __scope.slide.title is defined %}
+                    <div class="slide__title">
+                        <p>{{ __scope.slide.title.first }}</p>
+                        {% if __scope.slide.title.last is defined %}
+                            <p>{{ __scope.slide.title.last }}</p>
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+                {% set list_item_size = '' %}
+
+                {% if __scope.slide.list_size is defined %}
+                    {% set list_item_size = 'listItem_' ~ __scope.slide.list_size %}
+                {% endif %}
+
+                {% set listType = '' %}
+
+                {% if __scope.slide.list_type == 'bullet' %}
+                    {% set listType = 'listItem_bullet' %}
+                {% endif %}
+
+                {% if __scope.slide.list_type == 'cloud' %}
+                    {% set listType = 'listItem_cloud' %}
+                    {% set listTypeList = 'slide__list_cloud' %}
+                {% endif %}
+                <ul class="slide__list slide__list_show {{ listTypeList }}">
+                    {% for list_item in __scope.slide.list %}
+
+                        <li class="listItem {{ list_item_size }} {{ listType }}">
+                            {% if list_item.icon is defined %}
+                                <span class="listItem__icon">
+                                    <img src="{{ list_item.icon }}">
+                                </span>
+                            {% endif %}
+
+                            {% if __scope.slide.list_type == 'cloud' %}
+                                <span class="listItem__text" 
+                                        style="
+                                        font-size: {{ list_item.size }}px; 
+                                        font-weight: {{ list_item.weight }};
+                                        text-transform: {{ list_item.transform }};
+                                        line-height: {{ list_item.height }}px;">
+                                    {{ list_item.text }}
+                                </span>
+                            {% else %}
+                                <span class="listItem__text">
+                                    {% if list_item.title is defined %}
+                                        <div class="listItem__title">
+                                            {{ list_item.title }}
+                                        </div>
+                                        <div class="listItem__text">
+                                            {{ list_item.text }}
+                                        </div>
+                                    {% else %}
+                                        {{ list_item.text }}
+                                    {% endif %}
+                                </span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="slide__lastText">
+                {% if __scope.slide.icon_set is defined %}
+                    <div class="iconSet xs-center lg-start">
+                        {% for icon in __scope.slide.icon_set %}
+                            <div class="iconSet__item">
+                                <img class="iconSet__icon" src="{{ icon }}">
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %} 
+                <div class="slide__label">
+                    {{ __scope.slide.label }}
+                </div>
+                <div class="slide__links">
+                    {% if __scope.slide.btn is defined %}
+                        {% set btn_size = 'btn_' ~  __scope.slide.btn.size %}
+
+                        {% if __scope.slide.btn.size is defined %}
+                            {% set btn_size = 'btn_' ~  __scope.slide.btn.size %}
+                        {% endif %}
+                        <a class="btn {{ btn_size }}" {{ __scope.slide.btn.action }}>
+                            {{ __scope.slide.btn.text }}
+                        </a>
+                    {% endif %}
+                    {% if __scope.slide.link is defined %}
+                        <span>
+                            <a class="link {{ _linksVar }}" href="{{ __scope.slide.link.url }}">
+                                {{ __scope.slide.link.text }}
+                            </a>
+                        </span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

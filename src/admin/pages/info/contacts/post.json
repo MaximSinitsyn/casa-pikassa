@@ -1,0 +1,29 @@
+{
+    "templateFull": {
+        "data": "components/base/contacts_vertical.twig"
+    },
+    "scope": {
+        "json": "blocks/contacts.json"
+    },
+    "__var": {
+        "data": "contacts_reverse block_clear"
+    },
+    "sidebar_title": {
+        "data": "Меню"
+    },
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Правила аренды и посещения",
+                    "link": "/info/visit-rools"
+                },
+                {
+                    "title": "Контакты",
+                    "link": "/info/contacts"
+                }
+            ]
+        }
+    }
+}

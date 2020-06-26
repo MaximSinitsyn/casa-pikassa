@@ -1,0 +1,86 @@
+{
+    "slides": [
+        {
+            "data": {
+                "img": "/images/events/bookcrossing.jpg",
+                "text": {
+                    "main": "Анти лекторий",
+                    "sub": "Беседуем об искусстве"
+                },
+                "link": "/afisha/anti-lecture"
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/eng.jpg",
+                "text": {
+                    "main": "КАЖДОЕ ВОСКРЕСЕНЬЕ В 17:00",
+                    "sub": "Английский разговорный клуб"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/mafiya.jpg",
+                "text": {
+                    "main": "ПОЧТИ КАЖДУЮ ПЯТНИЦУ В 19:30",
+                    "sub": "Мафия на Английском"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/art.jpg",
+                "text": {
+                    "main": "ЛЕКЦИИ ПО ИСКУССТВУ",
+                    "sub": "Каждый ВТ,СР и СБ"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/japan.png",
+                "text": {
+                    "main": "КАЖДЫЙ ЧТ В 18:30",
+                    "sub": "Изучаем Японский язык"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/bookcrossing.jpg",
+                "text": {
+                    "main": "БУККРОССИНГ",
+                    "sub": "Приноси свои книги"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/punctum.jpg",
+                "text": {
+                    "main": "КАЖДЫЙ ВТ, СР, СБ",
+                    "sub": "Искусство, Кино Творчество"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/cowork.jpg",
+                "text": {
+                    "main": "ПО БУДНЯМ С 10:00 ДО 18:00",
+                    "sub": "Уютный коворкинг от 4000 руб/мес"
+                }
+            }
+        },
+        {
+            "data": {
+                "img": "/images/events/game.jpg",
+                "text": {
+                    "main": "КАЖДЫЙ ДЕНЬ ПО ВЕЧЕРАМ",
+                    "sub": "Более 100 настолок!"
+                }
+            }
+        }
+    ]
+}

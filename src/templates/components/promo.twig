@@ -1,0 +1,56 @@
+{% 
+    set 
+     _promo,
+    _block,
+    _mod, 
+    _text =
+    'promo_dark',
+    'block_overlay',
+    'blockHeading_white',
+    ''
+%}
+{% if __scope.variable == 'light' %}
+    {% 
+        set 
+         _promo,
+        _block,
+        _mod = 
+        '',
+        '',
+        ''
+    %}
+{% endif %}
+{% if __scope.main.text_size == 'small' %}
+    {% set _text = 'promo__text_small' %}
+{% endif %}
+
+<div class="promo block {{ _promo }} {{ _block }}">
+    <div class="row">
+        <div class="row row_clearOffset promo__row">
+        <div class="col xs-12 md-6 promo__left">
+            {% include "modules/blockHeading.twig" with { "__scope": __scope.main.title, "__mod": _mod } %}
+            <div class="promo__cont">
+                <div class="promo__text {{ _text }}">
+                    {{ __scope.main.text | raw }}
+                </div>
+                <div class="promo__btn">
+                    <a class="btn btn_big" {{ __scope.main.btn.action }}>
+                        {{ __scope.main.btn.text }}
+                    </a>
+                </div>
+                <div class="promo__phone">
+                    <div class="promo__phoneLabel">
+                        {{ __scope.main.phone }}
+                    </div>
+                    <div class="promo__phoneLinkWrap">
+                        <a class="promo__phoneLink" href="tel://{{ __super.phone }}">
+                            {{ __super.phone }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo__img" style="background-image: url({{ __scope.main.image }})"></div> 
+    </div>    
+    </div>
+</div>

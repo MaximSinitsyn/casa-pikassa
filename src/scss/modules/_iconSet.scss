@@ -1,0 +1,15 @@
+.iconSet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -#{size(1)};
+
+    &__item {
+        padding: size(1);
+    }
+
+    &__icon {
+        width: size(3);
+        height: size(3);
+    }
+}

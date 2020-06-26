@@ -1,0 +1,64 @@
+<div class="block block_overlay footer">
+    <div class="row">
+        <div class="col xs-12 md-6">
+            <div class="footer__logoWrapper">
+                <a class="logo footer__logo" href="/">
+                    <img src="{{ __super.logo_white.h }}" class="logo__logoImg">
+                </a>
+                <div class="footer__slogan">
+                    {{ __super.slogan }}
+                </div>
+            </div>
+        </div>
+        <div class="col xs-12 md-6 xs-center md-end">
+            <div class="footer__info">
+                <div class="footer__phone">
+                    <div class="phone phone_label xs-center md-end">
+                        <a href="tel: {{ __super.phone }}" class="phone__link">
+                            {{ __super.phone }}
+                        </a>
+                    </div>
+                </div>
+                <div class="info info_row info_noAbsolute">
+                    {% for item in __super.info %}
+                        <div class="info__infoItem">
+                            <div class="info__infoText">
+                                {% for text in item.text %}
+                                    <p>{{ text }}</p>
+                                {% endfor %}
+                            </div>
+                            <img src="{{ item.img }}">
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer__copyrightRow">
+        <div class="col xs-12 md-4 xs-center md-start">
+            <div class="text text_white">
+                {{ __super.copyright }}
+            </div>
+        </div>
+        <div class="col xs-12 md-4 xs-center">
+            {% for link in __super.footerLinks %}
+                <span>  
+                    <a href="{{ link.url }}" class="link link_white">
+                        {{ link.text }}
+                    </a>
+                </span>
+            {% endfor %}
+        </div>
+        <div class="col xs-12 md-4 xs-center md-end">
+            <a class="link link_noBorder link_white" href="https://kvott.ru" target="_blank">
+                <span>
+                    Сайт сделан с
+                </span>
+                <svg width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.114 2.345C18.619-2.199 11.742.483 11.742 5.097c0-4.614-6.878-7.296-10.373-2.752C-2.243 7.043 1.317 15.273 11.742 20 22.166 15.273 25.726 7.043 22.114 2.345z" fill="#F05228"></path></svg>
+                <span>
+                    студией Квотт.
+                </span>
+            </a>
+        </div>
+    </div>
+</div>

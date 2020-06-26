@@ -1,0 +1,125 @@
+{
+    "title": {
+        "data": {
+            "main": "Программы дней рождений"
+        }
+    },
+    "text": {
+        "data": "<p>Мы с вами переносимся во времени и оказываемся в 40-х на борту комфортабельной яхты с красивым названием «Глория». В кают-компании звучит красивая музыка, на палубе танцуют, в баре произносятся тосты. Гости яхты —банкиры, промышленные магнаты, высокопоставленные чиновники, — едут отдыхать в Рио де Жанейро. Но кто на самом деле скрывается за личинами обычных пассажиров? Что тайком перевозится в грузовых отсеках «Глории» и о чем предпочитает молчать капитан?</p><p>Динамичная, детективная игра в режиме реального времени – лучший вариант для проведения дня рождения или праздника для большой компании. Ваши гости будут в восторге и еще долго будут обсуждать произошедшие на борту события.</p><p>Мы с вами переносимся во времени и оказываемся в 40-х на борту комфортабельной яхты с красивым названием «Глория». В кают-компании звучит красивая музыка, на палубе танцуют, в баре произносятся тосты. Гости яхты —банкиры, промышленные магнаты, высокопоставленные чиновники, — едут отдыхать в Рио де Жанейро. Но кто на самом деле скрывается за личинами обычных пассажиров? Что тайком перевозится в грузовых отсеках «Глории» и о чем предпочитает молчать капитан?</p><p>Динамичная, детективная игра в режиме реального времени – лучший вариант для проведения дня рождения или праздника для большой компании. Ваши гости будут в восторге и еще долго будут обсуждать произошедшие на борту события.</p>"
+    },
+    "template": {
+        "data": "components/imageSlider.twig"
+    },
+    "id": {
+        "data": "programs"
+    },
+    "variable": {
+        "data": "light"
+    },
+    "tabs": [
+        {
+            "data": {
+                "short_name": "Взрослые",
+                "items": [
+                    {
+                        "img": "/images/packs/sherlok.png",
+                        "link": "/events/happy-birthday/programs/sherlok"
+                    },
+                    {
+                        "img": "/images/packs/gangster.png",
+                        "link": "/events/happy-birthday/programs/gangster-party"
+                    },
+                    {
+                        "img": "/images/packs/pajamas.png",
+                        "link": "/events/happy-birthday/programs/pajama-party"
+                    },
+                    {
+                        "img": "/images/packs/japan.png",
+                        "link": "/events/happy-birthday/programs/mysterious-japan"
+                    },
+                    {
+                        "img": "/images/packs/spy.png",
+                        "link": "/events/happy-birthday/programs/spy-party"
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "short_name": "Детские",
+                "items": [
+                    {
+                        "img": "/images/packs/harry.png",
+                        "link": "/events/happy-birthday/programs/harry-potter"
+                    },
+                    {
+                        "img": "/images/packs/prince.png",
+                        "link": "/events/happy-birthday/programs/small-prince"
+                    },
+                    {
+                        "img": "/images/packs/kids.png",
+                        "link": "/events/happy-birthday/programs/kids-party"
+                    },
+                    {
+                        "img": "/images/packs/superhero.png",
+                        "link": "/events/happy-birthday/programs/super-heroes"
+                    },
+                    {
+                        "img": "/images/packs/alisa.png",
+                        "link": "/events/happy-birthday/programs/alice-in-wonderland"
+                    }
+                ]
+            }
+        }
+    ],
+    "sidebar_title": {
+        "data": "Другие программы"
+    },
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Шерлок: детективное приключение",
+                    "link": "/events/happy-birthday/programs/sherlok"
+                },
+                {
+                    "title": "Гарри Поттер: пропавшее заклинание",
+                    "link": "/events/happy-birthday/programs/harry-potter"
+                },
+                {
+                    "title": "Маленький принц: доброе приключение",
+                    "link": "/events/happy-birthday/programs/small-prince"
+                },
+                {
+                    "title": "Kids Party: для маленьких непосед",
+                    "link": "/events/happy-birthday/programs/kids-party"
+                },
+                {
+                    "title": "Gangster Party: вечеринка в стиле 30-х",
+                    "link": "/events/happy-birthday/programs/gangster-party"
+                },
+                {
+                    "title": "Супергерои: вечеринка с любимыми персонажами",
+                    "link": "/events/happy-birthday/programs/super-heroes"
+                },
+                {
+                    "title": "Пижамная вечеринка",
+                    "link": "/events/happy-birthday/programs/pajama-party"
+                },
+                {
+                    "title": "Загадочная Япония: чайная медитация",
+                    "link": "/events/happy-birthday/programs/mysterious-japan"
+                },
+                {
+                    "title": "Шпионская вечеринка: детективное приключение в конце 40-х",
+                    "link": "/events/happy-birthday/programs/spy-party"
+                },
+                {
+                    "title": "Алиса в стране чудес: безумное чаепитие",
+                    "link": "/events/happy-birthday/programs/alice-in-wonderland"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: 150ms 0ms linear;
+
+    &.scroll {
+        background: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    &__container {
+        padding-top: size(2);
+        padding-bottom: size(2);
+        // border-bottom: 1px dashed #fff;
+        transition: 150ms 0ms linear;
+    }
+
+    &_simple &__container {
+        border-bottom: 1px dashed rgba($dark, 0.4);
+    }
+
+    &.scroll &__container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &_simple.scroll &__container {
+        border-bottom: 0;
+    }
+
+    &__mobileBtn {
+        padding-left: size(2);
+        margin-left: size(2);
+        border-left: 1px dashed;
+        border-color: $dark;
+        height: 100%;
+        align-items: center;
+    }
+
+    &_white &__mobileBtn {
+        border-color: #fff;
+    }
+
+    .scroll#{&}_white &__mobileBtn {
+        border-color: $dark;
+    }
+    
+    &__rightSide {
+        display: flex;
+    }
+
+    &__menu {
+        margin-right: size(3);
+    }
+}

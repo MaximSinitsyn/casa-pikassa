@@ -1,0 +1,96 @@
+.blockHeading {
+    margin-bottom: size(2);
+
+    @include media-query('lg') {
+        margin-bottom: size(6);
+    }
+
+    &_noOffset {
+        margin-bottom: 0;
+
+        @include media-query('lg') {
+            margin-bottom: 0;
+        }
+    }
+
+    &__main {
+        font-weight: 900;
+        text-transform: uppercase;
+        border-left: 6px solid $energized;
+        padding-left: size(2);
+        padding-bottom: 0;
+        color: $dark;
+
+        @include media-query('xs') {
+            @include heading(xs);
+            padding-bottom: 0;
+        }
+
+        @include media-query('sm') {
+            @include heading(md);
+            padding-bottom: 0;
+        }
+
+        @include media-query('md') {
+            @include heading(lg);
+            padding-left: size(4);
+            padding-bottom: 0;
+            border-left: size(1) solid $energized;
+        }
+
+        @include media-query('lg') {
+            @include heading(hg);
+            padding-bottom: 0;
+        }
+    }
+
+    &_small &__main {
+        @include media-query('xs') {
+            @include font(xhg);
+            padding-bottom: 0;
+        }
+
+        @include media-query('md') {
+            @include heading(xs);
+            padding-left: size(4);
+            padding-bottom: 0;
+            border-left: size(1) solid $energized;
+        }
+
+        @include media-query('lg') {
+            @include heading(sm);
+            padding-bottom: 0;
+        }
+    }
+
+    &_big &__main {
+        font-weight: 900;
+    }
+
+    &_white &__main {
+        color: #fff;
+    }
+
+    &__sub {
+        padding-left: size(2) + 6px;
+        margin-top: size(2);
+
+        @include media-query('md') {
+            @include font(lg);
+
+            padding-left: size(5);
+        }
+
+        @include media-query('sm') {
+            @include font(md);
+        }
+
+        @include media-query('xs') {
+            @include font(sm);
+        }
+    }
+
+    &_white &__sub {
+        color: rgba(#fff, 0.7);
+    }
+}

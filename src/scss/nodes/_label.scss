@@ -1,0 +1,15 @@
+.label {
+    color: $dark;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &_big {
+        @include heading(sm);
+
+        padding: 0;
+    }
+
+    &_white {
+        color: #fff;
+    }
+}

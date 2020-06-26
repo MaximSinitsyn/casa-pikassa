@@ -1,0 +1,82 @@
+{
+    "title": {
+        "data": {
+            "main": "Пространство Casa picassa",
+            "sub": "Casa Picassa это два уровня креативного и уютного арт пространства для полета фантазии."
+        }
+    },
+    "rooms": {
+        "data": [
+            {
+                "id": "picasso",
+                "title": "Пикассо",
+                "sub_title": "35 кв.м.",
+                "image": "/images/rooms/picasso/1.jpg",
+                "link": {
+                    "text": "Посмотреть подробнее",
+                    "url": "/rent/picasso"
+                }
+            },
+            {
+                "id": "klimt",
+                "title": "Климт",
+                "sub_title": "30 кв.м",
+                "image": "/images/rooms/klimt/1.jpg",
+                "link": {
+                    "text": "Посмотреть подробнее",
+                    "url": "/rent/klimt"
+                }
+            },
+            {
+                "id": "van-gog",
+                "title": "Ван Гог",
+                "sub_title": "47 кв.м",
+                "image": "/images/rooms/van-gog/1.jpg",
+                "link": {
+                    "text": "Посмотреть подробнее",
+                    "url": "/rent/van-gog"
+                }
+            },
+            {
+                "id": "dali",
+                "title": "Дали",
+                "sub_title": "23 кв.м",
+                "image": "/images/rooms/salvador/1.jpg",
+                "link": {
+                    "text": "Посмотреть подробнее",
+                    "url": "/rent/salvador"
+                }
+            },
+            {
+                "id": "malevich",
+                "title": "Малевич",
+                "sub_title": "20 кв.м",
+                "image": "/images/rooms/malevich/1.jpg",
+                "link": {
+                    "text": "Посмотреть подробнее",
+                    "url": "/rent/malevich"
+                }
+            },
+            {
+                "id": "mone",
+                "title": "Моне",
+                "sub_title": "12 кв.м",
+                "image": "/images/rooms/mone/1.jpg",
+                "link": {
+                    "text": "Посмотреть подробнее",
+                    "url": "/rent/mone"
+                }
+            },
+            {
+                "id": "renuar",
+                "title": "Ренуар",
+                "sub_title": "12 кв.м",
+                "image": "/images/rooms/renuar/1.jpeg",
+                "link": {
+                    "text": "Посмотреть подробнее",
+                    "url": "/rent/renuar"
+                }
+            }
+        ]
+    }
+}

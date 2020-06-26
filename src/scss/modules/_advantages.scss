@@ -1,0 +1,41 @@
+.advantages {
+    &__title {
+        @include heading(sm);
+
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: size(6);
+        margin-top: size(4);
+        border-top: 1px dashed rgba(#000, 0.2);
+
+        @include media-query(lg) {
+            padding-left: size(4);
+            border-left: 1px dashed rgba(#000, 0.2);
+            margin-left: -#{size(2)};
+            padding-top: 0;
+            margin-top: 0;
+            border-top: 0;
+        }
+    }
+
+    &__text {
+        @include font(md);
+
+        margin-top: size(3);
+    }
+
+    &__btn {
+        margin-top: size(3);
+    }
+
+    &__links {
+        margin-top: size(2);
+    }
+}

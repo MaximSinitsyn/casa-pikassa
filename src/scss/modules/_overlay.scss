@@ -1,0 +1,23 @@
+.overlay {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+
+    &__action {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(#000, 0.7);
+        transition: 150ms 0ms linear;
+    }
+
+    &:hover &__action {
+        opacity: 1;
+    }
+}

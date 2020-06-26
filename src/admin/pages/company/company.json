@@ -1,0 +1,36 @@
+{
+    "__modules": {
+      "head": {
+        "json": "pages/company/head.json"
+      },
+      "first": {
+        "json": "pages/company/first.json"
+      },
+      "roomsSlider": {
+        "json": "pages/company/roomsSlider.json"
+      },
+      "complex": {
+        "json": "pages/company/complex.json"
+      },
+      "cofebreak": {
+        "json": "pages/company/cofebreak.json"
+      },
+      "counter": {
+        "json": "blocks/counter.json"
+      },  
+      "clients": {
+        "json": "blocks/clientsBlock.json"
+      },
+      "gift": {
+        "json": "pages/company/gift.json"
+      },
+      "call_to_action": {
+        "json": "pages/company/call_to_action.json"
+      },
+      "contacts": {
+        "json": "blocks/contacts.json"
+      }
+    },
+    "__scripts": []
+  }
+  

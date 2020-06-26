@@ -1,0 +1,53 @@
+.sliderNav {
+    width: 100%;
+
+    &__container {
+        flex: 0 1 100%;
+    }
+
+    &__inner {
+        display: flex
+    }
+
+    &__arrow {
+        position: relative !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex: 0 0 40px;
+        transform: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &_left {
+            transform: scaleX(-1);
+        }
+
+        // &_right {}
+
+        svg {
+            width: size(4);
+            height: size(4);
+
+            g {
+                fill: #fff;
+                transition: 150ms 0ms linear;
+            }
+        }
+
+        &:hover svg g {
+            fill: rgba(#fff, 0.5)
+        }
+
+        &_dark {
+            svg g {
+                fill: $dark;
+            }
+
+            &:hover svg g {
+                fill: rgba($dark, 0.5)
+            }
+        }
+    }
+}

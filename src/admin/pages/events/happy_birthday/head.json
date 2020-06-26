@@ -1,0 +1,16 @@
+{
+    "background": {
+        "data": "/images/header__birthday.jpg"
+    },
+    "heading": {
+        "data": "День рождения!"
+    },
+    "description": {
+        "data": "В уютном Арт пространстве в центре Москвы."
+    },
+    "btn": {
+        "text": {
+            "data": "Получить скидку"
+        }
+    }
+}

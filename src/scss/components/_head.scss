@@ -1,0 +1,120 @@
+.head {
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+    overflow: hidden;
+    position: relative;
+
+    &__container {
+        background: linear-gradient(to top, rgba($dark, 0.4), rgba($dark, 0.4), rgba($dark, 0.8) 100%);
+        padding-top: size(9);
+        padding-bottom: size(10);
+        height: 100%;
+    }
+
+    &__content {
+        height: 100%;
+        position: relative;
+    }
+
+    &__videoWrapper {
+        display: none;
+        opacity: 0;
+
+        &_ready {
+            opacity: 1;
+        }
+
+        @include media-query('lg') {
+            display: block;
+        }
+    }
+
+    &__video {
+        position: absolute;
+        top: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        min-width: 115%;
+        min-height: 110%;
+        margin: auto;
+        transition: 300ms 0ms linear;
+    }
+
+    &__videoOverlay {
+        position: absolute;
+        background: linear-gradient(to top, rgba($dark, 0.4), rgba($dark, 0.4), rgba($dark, 0.8) 100%);
+        padding-top: size(9);
+        padding-bottom: size(10);
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+    &__heading {
+        
+        font-weight: 700;
+        color: #fff;
+
+        @include media-query('xs') {
+            @include heading('sm');
+        }
+
+        @include media-query('sm') {
+            @include heading('md');
+        }
+
+        @include media-query('md') {
+            @include heading('xhg');
+        }
+    }
+
+    &__typed {
+        position: relative;
+        height: 80px;
+        width: 100%;
+    }
+
+    &__typed &__heading {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__description {
+        color: #fff;
+        margin-top: size(4);
+
+        @include media-query('sm') {
+            @include font('md');
+        }
+
+        @include media-query('md') {
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: size(2);
+        }
+    }
+
+    &__btn {
+        margin-top: size(5);
+
+        @include media-query('xs') {
+            margin-bottom: size(3);
+        }
+    }
+
+    &__socialIcons {
+        position: absolute;
+        bottom: -#{size(7)};
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @include media-query('md') {
+            right: size(2);
+            width: auto;
+            bottom: auto;
+        }
+    }
+}

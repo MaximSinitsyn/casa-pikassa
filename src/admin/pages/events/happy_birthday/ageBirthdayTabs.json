@@ -1,0 +1,126 @@
+{
+    "id": {
+        "data": "ageBirthday"
+    },
+    "variable": {
+        "data": "light"
+    },
+    "title": {
+        "data": {
+            "main": "Дни рождения в Casa picassa",
+            "sub": "Проведите свое день рождение в уютной атмосфере или устройте день рождение для близких."
+        }
+    },
+    "link": {
+        "data": {
+            "text": "Посмотреть все мероприятия",
+            "url": "/events/happy-birthday/programs"
+        }
+    },
+    "tabs": {
+        "data": true
+    },
+    "slides": [
+        {
+            "data": {
+                "img": "/images/what/birthday.png",
+                "title": {
+                    "first": "День рождения",
+                    "last": "для взрослых"
+                },
+                "short_name": "Взрослые",
+                "list_type": "cloud",
+                "list": [
+                    {
+                        "text": "Стильные",
+                        "size": "18",
+                        "height": "20",
+                        "weight": "700",
+                        "transform": "uppercase"
+                    },
+                    {
+                        "text": "Креативные",
+                        "size": "28",
+                        "height": "30",
+                        "weight": "200",
+                        "transform": "normal"
+                    },
+                    {
+                        "text": "Праздничная атмосфера",
+                        "size": "16",
+                        "height": "20",
+                        "weight": "200",
+                        "transform": "uppercase"
+                    },
+                    {
+                        "text": "Веселые квесты",
+                        "size": "20",
+                        "height": "30",
+                        "weight": "700",
+                        "transform": "normal"
+                    }
+                ],
+                "label": "От 3500 руб.",
+                "btn": {
+                    "text": "Посмотреть сценарии",
+                    "action": "href=/events/happy-birthday/programs"
+                },
+                "link": {
+                    "text": "Заказать индивидуальный сценарий",
+                    "url": "#"
+                }
+            }
+        },
+
+        {
+            "data": {
+                "img": "/images/what/birthday_childrens.jpg",
+                "title": {
+                    "first": "День рождения",
+                    "last": "для детей"
+                },
+                "short_name": "Детские",
+                "list_type": "cloud",
+                "list": [
+                    {
+                        "text": "Стильные",
+                        "size": "28",
+                        "height": "30",
+                        "weight": "200",
+                        "transform": "normal"
+                    },
+                    {
+                        "text": "Креативные",
+                        "size": "20",
+                        "height": "30",
+                        "weight": "700",
+                        "transform": "normal"
+                    },
+                    {
+                        "text": "Праздничная атмосфера",
+                        "size": "16",
+                        "height": "20",
+                        "weight": "200",
+                        "transform": "uppercase"
+                    },
+                    {
+                        "text": "Веселые квесты",
+                        "size": "18",
+                        "height": "20",
+                        "weight": "700",
+                        "transform": "uppercase"
+                    }
+                ],
+                "label": "От 1600 руб./час",
+                "btn": {
+                    "text": "Посмотреть сценарии",
+                    "action": "href=/events/happy-birthday/programs"
+                },
+                "link": {
+                    "text": "Заказать индивидуальный сценарий",
+                    "url": "#"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,213 @@
+{
+    "title": {
+        "data": {
+            "main": "Супергерои: вечеринка с любимыми персонажами"
+        }
+    },
+    "post_img": {
+        "data": "/images/packs/superhero.png"
+    },
+    "post_type": {
+        "data": ""
+    },
+    "list": [
+        {
+            "data": {
+                "text": "От 3 лет",
+                "icon": "/icon/cake_dark.svg",
+                "type": "listItem_reverse"
+            }
+        },
+        {
+            "data": {
+                "text": "5-10 человек",
+                "icon": "/icon/users_dark.svg",
+                "type": "listItem_reverse"
+            }
+        }
+    ],
+    "text": {
+        "data": "<p>Самый запоминающийся праздник для наших маленьких гостей.  Веселые игры и мастер-классы с любимыми супергероями помогут ребенку перенестись в необыкновенный мир фантазии и праздника, где каждый участник сам создает свою неотъемлемую часть игровой вселенной.</p>"
+    },
+    "sidebar_title": {
+        "data": "Другие программы"
+    },
+    "heading": {
+        "data": ""
+    },
+    "blockMod": {
+        "data": "block_smallOffset"
+    },
+    "template": {
+        "data": "components/tariffs.twig"
+    },
+    "tariffs": [
+        {
+            "data": {
+                "title": "Minimal",
+                "sub_title": "2,5 часа",
+                "list": [
+                    {
+                        "text": "Подвижные игры с любимым героем — 30 мин."
+                    },
+                    {
+                        "text": "Научное шоу: Опыты и мыльные пузыри – 40 мин."
+                    },
+                    {   
+                        "text": "Шаромоделирование  — 20 мин."
+                    },
+                    {
+                        "text": "Фокусы и элементы аквагримма — 20 мин."
+                    },
+                    {
+                        "text": "Вынос тортика и чаепитие со сладостями — 40 мин."
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "12 500 руб.",
+                        "value_old": "16 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Standart",
+                "sub_title": "4 часа",
+                "list": [
+                    {
+                        "text": "Подвижные игры с любимым героем — 30 мин."
+                    },
+                    {
+                        "text": "Научное шоу: Опыты и мыльные пузыри – 40 мин."
+                    },
+                    {
+                        "text": "Мастер-класс по лизунам — 20 мин."
+                    },
+                    {
+                        "text": "Крио шоу — готовим мороженное — 25 мин."
+                    },
+                    {
+                        "text": "Шаромоделирование  — 20 мин."
+                    },
+                    {
+                        "text": "Фокусы и элементы аквагримма — 20 мин."
+                    },
+                    {
+                        "text": "Вынос тортика и чаепитие со сладостями — 40 мин."
+                    },
+                    {
+                        "text": "Скидка на аренду зала — 5%"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "14 500 руб.",
+                        "value_old": "19 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Premium",
+                "sub_title": "5 часов",
+                "list": [
+                    {
+                        "text": "Подвижные игры с любимым героем — 30 мин."
+                    },
+                    {
+                        "text": "Научное шоу: Опыты и мыльные пузыри – 40 мин."
+                    },
+                    {
+                        "text": "Мастер-класс по лизунам — 20 мин."
+                    },
+                    {
+                        "text": "Крио шоу — готовим мороженное — 25 мин."
+                    },
+                    {
+                        "text": "Шар- сюрприз и Дискотека — 30 мин."
+                    },
+                    {
+                        "text": "Шаромоделирование  — 20 мин."
+                    },
+                    {
+                        "text": "Фокусы и элементы аквагримма — 20 мин."
+                    },
+                    {
+                        "text": "Вынос тортика и чаепитие со сладостями — 40 мин."
+                    },
+                    {
+                        "text": "Скидка 10% на аренду залов"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "17 500 руб.",
+                        "value_old": "23 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        }
+    ],
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Шерлок: детективное приключение",
+                    "link": "/events/happy-birthday/programs/sherlok"
+                },
+                {
+                    "title": "Гарри Поттер: пропавшее заклинание",
+                    "link": "/events/happy-birthday/programs/harry-potter"
+                },
+                {
+                    "title": "Маленький принц: доброе приключение",
+                    "link": "/events/happy-birthday/programs/small-prince"
+                },
+                {
+                    "title": "Kids Party: для маленьких непосед",
+                    "link": "/events/happy-birthday/programs/kids-party"
+                },
+                {
+                    "title": "Gangster Party: вечеринка в стиле 30-х",
+                    "link": "/events/happy-birthday/programs/gangster-party"
+                },
+                {
+                    "title": "Супергерои: вечеринка с любимыми персонажами",
+                    "link": "/events/happy-birthday/programs/super-heroes"
+                },
+                {
+                    "title": "Пижамная вечеринка",
+                    "link": "/events/happy-birthday/programs/pajama-party"
+                },
+                {
+                    "title": "Загадочная Япония: чайная медитация",
+                    "link": "/events/happy-birthday/programs/mysterious-japan"
+                },
+                {
+                    "title": "Шпионская вечеринка: детективное приключение в конце 40-х",
+                    "link": "/events/happy-birthday/programs/spy-party"
+                },
+                {
+                    "title": "Алиса в стране чудес: безумное чаепитие",
+                    "link": "/events/happy-birthday/programs/alice-in-wonderland"
+                }
+            ]
+        }
+    }
+}

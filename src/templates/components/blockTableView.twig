@@ -1,0 +1,66 @@
+<div class="blockTableView block {{ __mod }}">
+    <div class="row">
+        {% if __scope.right_side_heading %}
+            <div class="col xs-12 md-7">
+                {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__mod": _mod ~ " blockHeading_noOffset" } %}
+            </div>
+            <div class="col xs-12 md-5 md-end xs-top">
+                <a class="btn btn_solid btn_medium" {{ __scope.btn.action }}>
+                    {{ __scope.btn.text }}
+                </a>
+            </div>
+        {% else %}
+            <div class="col xs-12 md-7">
+                {% include "modules/blockHeading.twig" with { "__scope": __scope.title } %}
+            </div>
+        {% endif %}
+    </div>
+    <div class="row">
+        {% 
+            set 
+            sm,
+            md,
+            lg =
+            '',
+            'md-6',
+            'lg-4'
+        %}
+        {% if __scope.columns is defined %}
+            {% if __scope.columns.sm is defined %}
+                {% set sm = __scope.columns.sm %}
+            {% endif %}
+
+            {% if __scope.columns.md is defined %}
+                {% set md = __scope.columns.md %}
+            {% endif %}
+
+            {% if __scope.columns.lg is defined %}
+                {% set lg = __scope.columns.lg %}
+            {% endif %}
+        {% endif %}
+        {% for item in __scope.items %}
+            <div class="col xs-12 {{sm}} {{md}} {{lg}}">
+                <div class="hoveredImage {{ __scope.mod_card }}" style="background-image: url({{ item.img }})">
+                    <div class="hoveredImage__content">
+                        <div class="hoveredImage__heading">
+                            <div class="hoveredImage__headingInner">
+                                <div class="hoveredImage__headingText">
+                                    {{ item.title }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hoveredImage__hiddenText">
+                            {% for text in item.text %}
+                                <p class="hoveredImage__textLine" >{{ text }}</p>
+                            {% endfor %}
+
+                            <a class="btn hoveredImage__btn" {{ item.btn.link }}>
+                                {{ item.btn.text }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

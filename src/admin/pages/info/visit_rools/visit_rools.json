@@ -1,0 +1,27 @@
+{
+    "__modules": {
+        "breadcrumbs": [
+            {
+                "data": {
+                    "text": "Главная",
+                    "link": "/"
+                }
+            },
+            {
+                "data": {
+                    "text": "Инфо",
+                    "link": "/info"
+                }
+            },
+            {
+                "data": {
+                    "text": "Правила аренды и посещения"
+                }
+            }
+        ],
+        "post": {
+            "json": "pages/info/visit_rools/post.json"
+        }
+    },
+    "__scripts": []
+}

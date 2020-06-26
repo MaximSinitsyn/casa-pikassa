@@ -1,0 +1,8 @@
+{% for item in __scope.rooms %}
+
+    {% if loop.index == 1 %}
+        {% include "components/blockTableView.twig" with { "__scope": item } %}
+    {% else %}
+        {% include "components/blockTableView.twig" with { "__scope": item, "__mod": __scope.block } %}
+    {% endif %}
+{% endfor %}

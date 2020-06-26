@@ -1,0 +1,18 @@
+<div class="block block_image" style="background-image: url({{ __scope.background }})">
+    <div class="block__inner">
+        <div class="row">
+            <div class="col xs-12 md-6 md-l-6">
+                {% include "modules/blockHeading.twig" with { "__scope": __scope.title, "__mod": __scope.headingMod } %}
+            </div>
+        </div>
+        {% if __scope.btn is defined %}
+            <div class="row">
+                <div class="col xs-12 md-6 md-l-6">
+                    <a class="btn btn_big" {{ __scope.btn.action }}>
+                        {{ __scope.btn.text }}
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,58 @@
+.promoCard {
+    padding: size(2);
+    z-index: 4;
+
+    @include media-query('md') {
+        background: rgba(#fff, 0.8);
+    }
+
+    @include media-query('lg') {
+        padding: size(5);
+    }
+
+    &__title {
+        @include heading(xs);
+
+        @include media-query('sm') {
+            @include heading(sm);
+        }
+
+        @include media-query('lg') {
+            @include heading(md);
+        }
+
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: size(5);
+        margin-bottom: size(5);
+        border-bottom: 1px dashed rgba(#000, 0.2)
+    }
+
+    &__textInner +  &__textInner {
+        margin-top: size(3);
+    }
+
+    &__textInner {
+        @include heading(xs);
+
+        @include media-query('lg') {
+            @include heading(sm);
+        }
+
+        font-weight: 700;
+
+        &:last-child {
+            margin-top: size(5);
+        }
+
+        &_label {
+            @include heading(sm);
+
+            @include media-query('lg') {
+                @include heading(md);
+            }
+
+            font-weight: 400;
+        }
+    }
+}

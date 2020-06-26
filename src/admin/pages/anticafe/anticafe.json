@@ -1,0 +1,30 @@
+{
+    "__modules": {
+      "head": {
+        "json": "pages/anticafe/head.json"
+      },
+      "tariffs": {
+        "json": "pages/anticafe/tariffs.json"
+      },
+      "roomsSlider": {
+        "json": "pages/anticafe/roomsSlider.json"
+      },
+      "promoBlock": {
+        "json": "pages/anticafe/promoBlock.json"
+      },
+      "whatElse": {
+        "json": "blocks/whatElse.json" 
+      },  
+      "counter": {
+        "json": "blocks/counter.json"
+      },  
+      "commentsSlider": {
+        "json": "blocks/commentsSlider.json"
+      },  
+      "contacts": {
+        "json": "blocks/contacts.json"
+      }
+    },
+    "__scripts": []
+  }
+  

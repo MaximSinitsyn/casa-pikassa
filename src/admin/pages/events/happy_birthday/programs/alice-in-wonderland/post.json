@@ -1,0 +1,192 @@
+{
+    "title": {
+        "data": {
+            "main": "Алиса в стране чудес: безумное чаепитие"
+        }
+    },
+    "post_img": {
+        "data": "/images/packs/alisa.png"
+    },
+    "post_type": {
+        "data": ""
+    },
+    "list": [
+        {
+            "data": {
+                "text": "От 15 лет",
+                "icon": "/icon/cake_dark.svg",
+                "type": "listItem_reverse"
+            }
+        },
+        {
+            "data": {
+                "text": "До 8 человек",
+                "icon": "/icon/users_dark.svg",
+                "type": "listItem_reverse"
+            }
+        }
+    ],
+    "text": {
+        "data": "<p>Берите друзей и отправляйтесь в волшебный и безумный мир Льюиса Кэролла и Алисы в Стране чудес. Вас ждут настоящие приключения! Безумное детективное расследование пропажи в стране чудес: помогите шляпнику найти то, что у него похитили. Но будьте осторожны, кто-то из свидетелей точно врет,… да и к тому же они все безумны…Также вас ждут необыкновенный мастер-класс в стиле сюрреализм и веселый квиз в тематике самой оригинальной сказочной вселенной.</p><p>Выберите подходящий вариант дня рождения в стиле Алиса в стране чудес.</p>"
+    },
+    "sidebar_title": {
+        "data": "Другие программы"
+    },
+    "heading": {
+        "data": ""
+    },
+    "blockMod": {
+        "data": "block_smallOffset"
+    },
+    "template": {
+        "data": "components/tariffs.twig"
+    },
+    "tariffs": [
+        {
+            "data": {
+                "title": "Minimal",
+                "sub_title": "3 часа",
+                "list": [
+                    {
+                        "text": "Квест приключение: Безумное чаепитие (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Безумные настольные игры: Dixit, Иманджинариум, Мистериум, Сновидения, Штука"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "7 500 руб.",
+                        "value_old": "3 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Standart",
+                "sub_title": "4 часа",
+                "list": [
+                    {
+                        "text": "Квест приключение: Безумное чаепитие (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Безумные настольные игры: Dixit, Иманджинариум, Мистериум, Сновидения, Штука"
+                    },
+                    {
+                        "text": "Мастер-класс Эбру или Скрапбукинг"
+                    },
+                    {
+                        "text": "Безумный Quiz в стране Чудес"
+                    },
+                    {
+                        "text": "Скидка на аренду зала — 5%"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "7 000 руб.",
+                        "value_old": "11 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Premium",
+                "sub_title": "5 часов",
+                "list": [
+                    {
+                        "text": "Квест приключение: Безумное чаепитие (60 мин)"
+                    },
+                    {
+                        "text": "Чай, кофе, сладости  и мини тортик для именинника"
+                    },
+                    {
+                        "text": "Безумные настольные игры: Dixit, Иманджинариум, Мистериум, Сновидения, Штука"
+                    },
+                    {
+                        "text": "«Mafia» или «Данетки» с ведущим"
+                    },
+                    {
+                        "text": "Скидка на аренду зала — 5%"
+                    },
+                    {
+                        "text": "Скидка 10% на аренду залов"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "15 500 руб.",
+                        "value_old": "15 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        }
+    ],
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Шерлок: детективное приключение",
+                    "link": "/events/happy-birthday/programs/sherlok"
+                },
+                {
+                    "title": "Гарри Поттер: пропавшее заклинание",
+                    "link": "/events/happy-birthday/programs/harry-potter"
+                },
+                {
+                    "title": "Маленький принц: доброе приключение",
+                    "link": "/events/happy-birthday/programs/small-prince"
+                },
+                {
+                    "title": "Kids Party: для маленьких непосед",
+                    "link": "/events/happy-birthday/programs/kids-party"
+                },
+                {
+                    "title": "Gangster Party: вечеринка в стиле 30-х",
+                    "link": "/events/happy-birthday/programs/gangster-party"
+                },
+                {
+                    "title": "Супергерои: вечеринка с любимыми персонажами",
+                    "link": "/events/happy-birthday/programs/super-heroes"
+                },
+                {
+                    "title": "Пижамная вечеринка",
+                    "link": "/events/happy-birthday/programs/pajama-party"
+                },
+                {
+                    "title": "Загадочная Япония: чайная медитация",
+                    "link": "/events/happy-birthday/programs/mysterious-japan"
+                },
+                {
+                    "title": "Шпионская вечеринка: детективное приключение в конце 40-х",
+                    "link": "/events/happy-birthday/programs/spy-party"
+                },
+                {
+                    "title": "Алиса в стране чудес: безумное чаепитие",
+                    "link": "/events/happy-birthday/programs/alice-in-wonderland"
+                }
+            ]
+        }
+    }
+}

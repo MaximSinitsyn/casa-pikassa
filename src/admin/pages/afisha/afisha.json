@@ -1,0 +1,21 @@
+{
+    "__modules": {
+        "breadcrumbs": [
+            {
+                "data": {
+                    "text": "Главная",
+                    "link": "/"
+                }
+            },
+            {
+                "data": {
+                    "text": "Афиша"
+                }
+            }
+        ],
+        "post": {
+            "json": "pages/afisha/post.json"
+        }
+    },
+    "__scripts": []
+}

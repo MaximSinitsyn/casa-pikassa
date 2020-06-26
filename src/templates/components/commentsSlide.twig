@@ -1,0 +1,23 @@
+<div class="uk-slider-container">
+    <ul class="uk-slider-items col xs-12">
+        {% for slide in __scope.slides %}
+            <li class="col xs-12 md-4">
+                <div class="commentCard">
+                    {% if slide.image is defined %}
+                        <div class="commentCard__img">
+                            <img src="{{ slide.image }}" />
+                        </div>
+                    {% endif %}
+                    <div class="commentCard__content">
+                        <div class="commentCard__title">
+                            {{ slide.title }}
+                        </div>
+                        <div class="commentCard__text">
+                            {{ slide.text | raw }}
+                        </div>
+                    </div>
+                </div>    
+            </li>
+        {% endfor %}
+    </ul>
+</div>

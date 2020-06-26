@@ -1,0 +1,42 @@
+{
+    "background": {
+        "data": "images/header.jpg"
+    },
+    "videoBack": {
+        "data": "files/CasaPicassa.mp4"
+    },
+    "heading": {
+        "data": ""
+    },
+    "description": {
+        "data": "Очень уютная, светлая и креативная арт площадка для проведения мероприятий в 1 мин от м. Таганская"
+    },
+    "typed": [
+        {
+            "text": {
+                "data": "тебя..."
+            }
+        },
+        {
+            "text": {
+                "data": "работы..."
+            }
+        },
+        {
+            "text": {
+                "data": "отдыха..."
+            }
+        },
+        {
+            "text": {
+                "data": "друзей..."
+            }
+        }
+    ],
+    "btn": {
+        "data": {
+            "text": "Забронировать время",
+            "action": "#"
+        }
+    }
+}

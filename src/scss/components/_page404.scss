@@ -1,0 +1,28 @@
+.page404 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    
+    &__fontWrap {
+        max-width: 400px;
+        width: 100%;
+        padding: size(4);
+    }
+
+    &__font {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__text {
+        @include font(xhg);
+
+        margin-top: size(3);
+        padding: size(4);
+    }
+}

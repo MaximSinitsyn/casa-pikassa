@@ -1,0 +1,64 @@
+{
+    "title": {
+        "data": {
+            "main": "Тарифы",
+            "sub": "Ну очень вкусные тарифы в антикафе Casa Picassa"
+        }
+    },
+    "link": {
+        "data": {
+            "text": "Задать вопрос по мероприятию",
+            "action": "#"
+        }
+    },
+    "block_type": {
+        "data": "overlay"
+    },
+    "columns": {
+        "data": {
+            "md": "md-6"
+        }
+    },
+    "tariffs": [
+        {
+            "data": {
+                "icon": "/icon/tickets.svg",
+                "title": "Standart",
+                "list": [
+                    {
+                        "text": "Вход для любых возрастных групп без ограничейний"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Забронировать место",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "icon": "/icon/coupon.svg",
+                "title": "Study",
+                "list": [
+                    {
+                        "text": "Скидка для студентов творческих вузов"
+                    }
+                ],
+                "price": [
+                    {
+                        "value": "400 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Забронировать место",
+                    "action": "#"
+                }
+            }
+        }
+    ]
+}

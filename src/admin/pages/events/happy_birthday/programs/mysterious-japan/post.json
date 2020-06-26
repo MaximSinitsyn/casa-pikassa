@@ -1,0 +1,147 @@
+{
+    "title": {
+        "data": {
+            "main": "Загадочная Япония: чайная медитация"
+        }
+    },
+    "post_img": {
+        "data": "/images/packs/japan.png"
+    },
+    "post_type": {
+        "data": ""
+    },
+    "list": [
+        {
+            "data": {
+                "text": "От 12 лет",
+                "icon": "/icon/cake_dark.svg",
+                "type": "listItem_reverse"
+            }
+        },
+        {
+            "data": {
+                "text": "До 8 человек",
+                "icon": "/icon/users_dark.svg",
+                "type": "listItem_reverse"
+            }
+        }
+    ],
+    "text": {
+        "data": "<p>Вас ждет волшебный мир наполненный потрясающей легкостью и неподдельной мудростью А. дэ сент Экзюпери. Уникальный сюжет который подходит как для взрослых, так и для детей. Даже если вы не умеете чинить самолеты и рисовать барашков, вы сможете оказать неоценимую помощь маленькому герою в поисках его друга, летчика Антуана. Вас ожидает невероятное путешествие к незнакомым планетам, каждая из которых откроет вам свои тайны. Нужно только суметь их прочесть.</p><p>Выберите подходящий вариант дня рождения в стиле Маленький принц.</p>"
+    },
+    "sidebar_title": {
+        "data": "Другие программы"
+    },
+    "heading": {
+        "data": ""
+    },
+    "blockMod": {
+        "data": "block_smallOffset"
+    },
+    "template": {
+        "data": "components/tariffs.twig"
+    },
+    "tariffs": [
+        {
+            "data": {
+                "title": "Minimal",
+                "sub_title": "3 часа",
+                "list": [
+                ],
+                "price": [
+                    {
+                        "value": "7 500 руб.",
+                        "value_old": "3 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Standart",
+                "sub_title": "4 часа",
+                "list": [
+                ],
+                "price": [
+                    {
+                        "value": "7 000 руб.",
+                        "value_old": "11 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        },
+        {
+            "data": {
+                "title": "Premium",
+                "sub_title": "5 часов",
+                "list": [
+                ],
+                "price": [
+                    {
+                        "value": "12 500 руб.",
+                        "value_old": "16 500 руб."
+                    }
+                ],
+                "btn": {
+                    "text": "Заказать",
+                    "action": "#"
+                }
+            }
+        }
+    ],
+    "sidebar": {
+        "data": {
+            "type": "menu",
+            "items": [
+                {
+                    "title": "Шерлок: детективное приключение",
+                    "link": "/events/happy-birthday/programs/sherlok"
+                },
+                {
+                    "title": "Гарри Поттер: пропавшее заклинание",
+                    "link": "/events/happy-birthday/programs/harry-potter"
+                },
+                {
+                    "title": "Маленький принц: доброе приключение",
+                    "link": "/events/happy-birthday/programs/small-prince"
+                },
+                {
+                    "title": "Kids Party: для маленьких непосед",
+                    "link": "/events/happy-birthday/programs/kids-party"
+                },
+                {
+                    "title": "Gangster Party: вечеринка в стиле 30-х",
+                    "link": "/events/happy-birthday/programs/gangster-party"
+                },
+                {
+                    "title": "Супергерои: вечеринка с любимыми персонажами",
+                    "link": "/events/happy-birthday/programs/super-heroes"
+                },
+                {
+                    "title": "Пижамная вечеринка",
+                    "link": "/events/happy-birthday/programs/pajama-party"
+                },
+                {
+                    "title": "Загадочная Япония: чайная медитация",
+                    "link": "/events/happy-birthday/programs/mysterious-japan"
+                },
+                {
+                    "title": "Шпионская вечеринка: детективное приключение в конце 40-х",
+                    "link": "/events/happy-birthday/programs/spy-party"
+                },
+                {
+                    "title": "Алиса в стране чудес: безумное чаепитие",
+                    "link": "/events/happy-birthday/programs/alice-in-wonderland"
+                }
+            ]
+        }
+    }
+}

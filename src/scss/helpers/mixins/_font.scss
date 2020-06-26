@@ -1,0 +1,21 @@
+
+@mixin font($val) {
+    @if map-has-key($fonts, $val) {
+        font-size: map-get(map-get($fonts, $val), 'font-size');
+        line-height: size(map-get(map-get($fonts, $val), 'line-height'));
+    } @else {
+        @warn "Размер не найден `#{$val}`. "
+        + "Проверьте, существует ли данный размер в `$fonts` map.";
+    }
+}
+
+@mixin heading($val) {
+    @if map-has-key($headings, $val) {
+        font-size: map-get(map-get($headings, $val), 'font-size');
+        line-height: size(map-get(map-get($headings, $val), 'line-height'));
+        padding-bottom: size(map-get(map-get($headings, $val), 'padding-bottom'));
+    } @else {
+        @warn "Размер не найден `#{$val}`. "
+        + "Проверьте, существует ли данный размер в `$headings` map.";
+    }
+}

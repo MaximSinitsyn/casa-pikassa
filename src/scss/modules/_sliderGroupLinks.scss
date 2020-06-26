@@ -1,0 +1,39 @@
+.sliderGroupLinks {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &__item {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $energized;
+        opacity: 0.5;
+        white-space: nowrap;
+        cursor: pointer;
+        padding: size(1) size(2);
+        border: 3px solid transparent;
+        transition: 150ms 0ms linear;
+
+        &_active {
+            border: 3px solid $energized;
+            color: #fff;
+            opacity: 1;
+        }
+
+        &_dark {
+            color: $dark;
+        }
+    }
+
+    &__caption {
+        border-bottom: 1px dashed $energized;
+        transition: 150ms 0ms linear;
+    }
+
+    &__item_dark &__caption {
+        border-bottom: 1px dashed $dark;
+    }
+
+    &__item_active &__caption {
+        border-bottom: 1px dashed transparent;
+    }
+}

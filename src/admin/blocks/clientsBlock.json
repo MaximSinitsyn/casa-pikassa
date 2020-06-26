@@ -1,0 +1,21 @@
+{
+    "template": {
+        "data": "clientsSlide"
+    },
+    "title": {
+        "data": {
+            "main": "Нам доверяют",
+            "sub": "Клиенты, которые проводили у нас тимбилдинги, корпоративы, конференции и презентации."
+        }
+    },
+    "columns": {
+        "data": {
+            "sm": "sm-12",
+            "md": "sm-12",
+            "lg": "sm-12"
+        }
+    },
+    "slides": {
+        "json": "blocks/clients.json"
+    }
+}

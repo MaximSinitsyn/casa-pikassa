@@ -1,0 +1,27 @@
+{
+    "__modules": {
+        "breadcrumbs": [
+            {
+                "data": {
+                    "text": "Главная",
+                    "link": "/"
+                }
+            },
+            {
+                "data": {
+                    "text": "Инфо",
+                    "link": "/info"
+                }
+            },
+            {
+                "data": {
+                    "text": "Контакты"
+                }
+            }
+        ],
+        "post": {
+            "json": "pages/info/contacts/post.json"
+        }
+    },
+    "__scripts": []
+}

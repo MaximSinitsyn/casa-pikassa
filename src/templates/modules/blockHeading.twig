@@ -1,0 +1,20 @@
+{% set mod = "" %}
+{% if __mod is defined %}
+    {% set mod = __mod %}
+{% endif %}
+
+{% set heading = "h2" %}
+{% if __heading is defined %}
+    {% set heading = __heading %}
+{% endif %}
+
+<div class="blockHeading {{ mod }}">
+    <{{heading}} class="blockHeading__main">
+        {{ __scope.main }}
+    </{{heading}}>
+    {% if __scope.sub is defined %}
+        <div class="blockHeading__sub">
+            {{ __scope.sub }}
+        </div>
+    {% endif %}
+</div>

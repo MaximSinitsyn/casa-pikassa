@@ -1,0 +1,40 @@
+.arrows {
+    display: flex;
+
+    &__arrow {
+        height: size(4);
+        width: size(4);
+        cursor: pointer;
+
+        @include media-query('md') { 
+            height: size(6);
+            width: size(6);
+        }
+
+        g {
+            fill: #fff;
+            transition: 150ms 0ms linear;
+        }
+
+        &:hover g {
+            fill: rgba(#fff, 0.5);
+        }
+
+        &:first-child {
+            transform: scaleX(-1);
+            margin-right: size(2);
+        }
+    }
+
+    &__arrow.uk-invisible {
+        display: none;
+    }
+
+    &_dark &__arrow g {
+        fill: $dark;
+    }
+
+    &_dark &__arrow:hover g {
+        fill: rgba($dark, 0.5);
+    }
+}

@@ -1,0 +1,144 @@
+.promo {
+    &__row {
+        position: relative;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        position: absolute;
+        height: calc(100% + 220px);
+        width: 50%;
+        top: -110px;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position: center;
+        display: none;
+
+        @include media-query(md) {
+            display: block;
+        }
+    }
+
+    &__cont {
+        display: flex;
+        flex-direction: column;
+
+        @include media-query(md) {
+            padding-left: size(5);
+        }
+    }
+
+    &__text {
+        @include font(lg);
+
+        @include media-query(md) {
+            @include font(hg);
+        }
+
+        @include media-query(lg) {
+            @include font(xhg);
+        }
+
+        &_small {
+            @include font(sm);
+
+            @include media-query(md) {
+                @include font(md);
+            }
+    
+            @include media-query(lg) {
+                @include font(lg);
+            }
+        }
+
+        p + p {
+            margin-top: size(2);
+        }
+
+        p + ul {
+            margin-top: size(4);
+        }
+
+        li {
+            position: relative;
+            padding-left: size(2);
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: size(1);
+                height: size(1);
+                left: 0;
+                top: calc(#{size(1)} - #{size(1) / 2});
+                background: $energized;
+                border-radius: size(1);
+            }
+        }
+
+        li + li {
+            margin-top: size(2);
+        }
+    }
+
+    &_dark &__text {
+        color: #fff;
+    }
+
+    &__btn {
+        margin-top: size(3);
+
+        @include media-query(md) {
+            margin-top: size(8);
+        }
+    }
+
+    &__phone {
+        margin-top: size(4);
+    }
+
+    &__phoneLabel {
+        @include font(lg);
+        
+        @include media-query(md) {
+            @include font(xhg);
+        }
+
+        opacity: 0.5;
+    }
+
+    &_dark &__phoneLabel {
+        color: #fff;
+    }
+
+    &__phoneLinkWrap {
+        margin-top: size(1);
+    }
+
+    &__phoneLink {
+        @include font(lg);
+        
+        @include media-query(md) {
+            @include font(xhg);
+        }
+
+        font-weight: 700;
+        color: $dark;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    &_dark &__phoneLink {
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
